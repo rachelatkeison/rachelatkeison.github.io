@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ========================================================= -->
+  <!-- ====================== META / HEAD ======================= -->
+  <!-- ========================================================= -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rachel Atkeison — Aureine Audio Systems</title>
   <meta name="description" content="Aureine Audio Systems — dreamy music technology portfolio by Rachel Atkeison featuring audio software, DSP, MIDI intelligence, spatial audio, immersive performance systems, and original music." />
+
   <style>
+    /* ========================================================= */
+    /* ====================== ROOT COLORS ====================== */
+    /* ========================================================= */
     :root {
       --bg: #090611;
       --bg-2: #10091a;
@@ -33,6 +40,9 @@
       --gradient-soft: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
     }
 
+    /* ========================================================= */
+    /* ==================== GLOBAL / RESET ===================== */
+    /* ========================================================= */
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -53,6 +63,9 @@
       src: local("Georgia");
     }
 
+    /* ========================================================= */
+    /* ================= BACKGROUND DECORATION ================= */
+    /* ========================================================= */
     .noise,
     .grid,
     .stars,
@@ -125,6 +138,9 @@
       mix-blend-mode: screen;
     }
 
+    /* ========================================================= */
+    /* ======================= ANIMATIONS ====================== */
+    /* ========================================================= */
     @keyframes twinkle {
       0%, 100% { transform: scale(0.9); opacity: 0.45; }
       50% { transform: scale(1.9); opacity: 1; }
@@ -140,6 +156,9 @@
       50% { transform: translate(-35px, 35px); }
     }
 
+    /* ========================================================= */
+    /* ===================== LAYOUT BASICS ===================== */
+    /* ========================================================= */
     .container {
       width: min(var(--max), calc(100% - 2rem));
       margin: 0 auto;
@@ -154,6 +173,9 @@
       -webkit-backdrop-filter: blur(24px);
     }
 
+    /* ========================================================= */
+    /* ======================== HEADER ========================= */
+    /* ========================================================= */
     .header-wrap {
       position: sticky;
       top: 14px;
@@ -233,6 +255,9 @@
       color: var(--text);
     }
 
+    /* ========================================================= */
+    /* ===================== TYPOGRAPHY / UI =================== */
+    /* ========================================================= */
     section {
       padding: 92px 0 0;
       position: relative;
@@ -367,6 +392,9 @@
       border-color: rgba(255,255,255,0.08);
     }
 
+    /* ========================================================= */
+    /* ===================== CARD SPACING ====================== */
+    /* ========================================================= */
     .hero-card,
     .hero-stats,
     .about-card,
@@ -432,6 +460,9 @@
 
     .metric-label { font-size: 0.92rem; }
 
+    /* ========================================================= */
+    /* ===================== SECTION HEADERS =================== */
+    /* ========================================================= */
     .section-head {
       display: flex;
       align-items: end;
@@ -444,6 +475,9 @@
       max-width: 62ch;
     }
 
+    /* ========================================================= */
+    /* ======================= ABOUT GRID ====================== */
+    /* ========================================================= */
     .about-grid {
       display: grid;
       grid-template-columns: 1.08fr 0.92fr;
@@ -473,6 +507,9 @@
 
     .chip-link { text-decoration: none; }
 
+    /* ========================================================= */
+    /* ===================== PROJECT FILTERS =================== */
+    /* ========================================================= */
     .filters {
       display: flex;
       gap: 10px;
@@ -487,6 +524,9 @@
       color: var(--text);
     }
 
+    /* ========================================================= */
+    /* ====================== PROJECT GRID ===================== */
+    /* ========================================================= */
     .project-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -574,6 +614,9 @@
       font-weight: 600;
     }
 
+    /* ========================================================= */
+    /* ======================= MUSIC GRID ====================== */
+    /* ========================================================= */
     .music-grid {
       display: grid;
       grid-template-columns: 1.04fr 0.96fr;
@@ -622,6 +665,9 @@
       gap: 20px;
     }
 
+    /* ========================================================= */
+    /* =================== PLACEHOLDER / NOTES ================= */
+    /* ========================================================= */
     .mini-music-card,
     .placeholder-card,
     .labs-card,
@@ -668,6 +714,9 @@
       gap: 8px;
     }
 
+    /* ========================================================= */
+    /* ====================== CONTACT / FOOTER ================= */
+    /* ========================================================= */
     .contact-card {
       text-align: center;
       padding: 36px 26px;
@@ -683,6 +732,9 @@
       z-index: 2;
     }
 
+    /* ========================================================= */
+    /* ========================== MODAL ======================== */
+    /* ========================================================= */
     .modal-backdrop {
       position: fixed;
       inset: 0;
@@ -762,6 +814,9 @@
 
     .hidden { display: none !important; }
 
+    /* ========================================================= */
+    /* ======================= RESPONSIVE ====================== */
+    /* ========================================================= */
     @media (max-width: 1040px) {
       .hero,
       .about-grid,
@@ -803,13 +858,20 @@
     }
   </style>
 </head>
+
 <body>
+  <!-- ========================================================= -->
+  <!-- ================= BACKGROUND ELEMENTS =================== -->
+  <!-- ========================================================= -->
   <div class="noise"></div>
   <div class="grid"></div>
   <div class="aurora"></div>
   <div class="stars" aria-hidden="true"></div>
   <div class="cursor-glow"></div>
 
+  <!-- ========================================================= -->
+  <!-- ========================= HEADER ======================== -->
+  <!-- ========================================================= -->
   <div class="header-wrap container">
     <header>
       <a class="brand" href="#top" aria-label="Aureine Audio Systems home">
@@ -831,6 +893,9 @@
   </div>
 
   <main id="top" class="container">
+    <!-- ========================================================= -->
+    <!-- ====================== HERO SECTION ===================== -->
+    <!-- ========================================================= -->
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Music Technology • Audio Software • Creative Systems</p>
@@ -885,6 +950,9 @@
       </div>
     </section>
 
+    <!-- ========================================================= -->
+    <!-- ====================== ABOUT SECTION ==================== -->
+    <!-- ========================================================= -->
     <section id="about">
       <div class="section-head">
         <div>
@@ -937,6 +1005,9 @@
       </div>
     </section>
 
+    <!-- ========================================================= -->
+    <!-- ===================== PROJECTS SECTION ================== -->
+    <!-- ========================================================= -->
     <section id="projects">
       <div class="section-head">
         <div>
@@ -1145,6 +1216,9 @@
       </div>
     </section>
 
+    <!-- ========================================================= -->
+    <!-- ======================= MUSIC SECTION =================== -->
+    <!-- ========================================================= -->
     <section id="music">
       <div class="section-head">
         <div>
@@ -1158,46 +1232,114 @@
       </div>
 
       <div class="music-grid">
+        <!-- ================= FEATURED ALBUM: SOLSTICE ================= -->
         <div class="music-showcase glass">
           <div class="album-art">
             <div class="album-inner">
+              <!-- REPLACE WITH YOUR SOLSTICE COVER IMAGE -->
+              <!--
+              <img src="assets/images/solstice-cover.jpg"
+                   alt="Solstice album cover"
+                   style="width:100%; height:100%; object-fit:cover; border-radius:22px;" />
+              -->
               <div>
-                <div style="font-size:2.25rem;">First Frost</div>
-                <div style="font-size:1rem; margin-top:8px; opacity:0.95;">Winter Lofi Album</div>
+                <div style="font-size:2.25rem;">Solstice</div>
+                <div style="font-size:1rem; margin-top:8px; opacity:0.95;">Upcoming Pop Album</div>
               </div>
             </div>
           </div>
+
           <div class="music-copy">
-            <p class="project-meta">Original Release • Artist / Producer</p>
-            <h3>First Frost — Winter Lofi Album</h3>
+            <p class="project-meta">Future Release • Pop • Artist / Producer / Writer</p>
+            <h3>Solstice — Upcoming Pop Album</h3>
             <p>
-              A winter-inspired lo-fi release built around soft piano, ambient textures, and intimate sound design.
-              This section is designed to hold streaming links, a cover image, credits, a short artist statement,
-              embedded audio, liner notes, and future releases.
+              Solstice is an upcoming pop project that expands my work into a more lyrical, emotionally vivid,
+              and magnetic direction while still keeping the dreamy atmosphere and sonic identity that define
+              my creative work.
+            </p>
+            <p style="margin-top:14px;">
+              This album is designed to feel immersive and luminous — blending expressive melodies,
+              emotional storytelling, and cinematic production. It represents a bigger artistic step
+              for me, and this space can hold pre-save links, teaser visuals, release notes, track updates,
+              credits, and full rollout materials.
             </p>
             <div class="music-links" style="margin-top:18px;">
-              <a class="btn primary" href="#">Spotify link</a>
-              <a class="btn secondary" href="#">Apple Music link</a>
-              <a class="btn ghost" href="#">Bandcamp / YouTube / Press</a>
+              <a class="btn primary" href="#">Pre-save</a>
+              <a class="btn secondary" href="#">Teaser</a>
+              <a class="btn ghost" href="#">YouTube</a>
             </div>
           </div>
         </div>
 
+        <!-- ================= RIGHT MUSIC CARDS ================= -->
         <div class="mini-music-grid">
+          <!-- -------- BLOOM CIRCUIT -------- -->
           <div class="mini-music-card glass">
-            <p class="mini-label">Add later</p>
-            <h3>Future releases</h3>
-            <p class="placeholder-note">Space for singles, EPs, production reels, soundtrack work, live sets, or featured collaborations.</p>
+            <!-- REPLACE WITH YOUR BLOOM CIRCUIT COVER IMAGE -->
+            <!--
+            <img src="assets/images/bloom-circuit-cover.jpg"
+                 alt="Bloom Circuit album cover"
+                 style="width:100%; height:220px; object-fit:cover; border-radius:22px;" />
+            -->
+            <p class="mini-label">Released • Spring Lofi</p>
+            <h3>Bloom Circuit</h3>
+            <p class="placeholder-note">
+              A bright spring lofi album built around blooming textures, playful melodies, and warm, uplifting energy.
+            </p>
+            <div class="music-links" style="margin-top:16px;">
+              <a class="btn primary" href="#">Spotify</a>
+              <a class="btn secondary" href="#">Apple Music</a>
+              <a class="btn ghost" href="#">YouTube</a>
+            </div>
           </div>
+
+          <!-- -------- FIRST FROST -------- -->
           <div class="mini-music-card glass">
-            <p class="mini-label">Add later</p>
-            <h3>Embedded player / visualizer</h3>
-            <p class="placeholder-note">Swap this card for an embedded Spotify player, SoundCloud module, YouTube performance video, or custom audio visualizer.</p>
+            <!-- REPLACE WITH YOUR FIRST FROST COVER IMAGE -->
+            <!--
+            <img src="assets/images/first-frost-cover.jpg"
+                 alt="First Frost album cover"
+                 style="width:100%; height:220px; object-fit:cover; border-radius:22px;" />
+            -->
+            <p class="mini-label">Released • Winter Lofi</p>
+            <h3>First Frost</h3>
+            <p class="placeholder-note">
+              A winter lofi album centered on soft piano, ambient textures, and quiet, intimate sound design.
+            </p>
+            <div class="music-links" style="margin-top:16px;">
+              <a class="btn primary" href="#">Spotify</a>
+              <a class="btn secondary" href="#">Apple Music</a>
+              <a class="btn ghost" href="#">YouTube</a>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <!-- ================= BOTTOM MUSIC ROW ================= -->
+      <div class="placeholder-grid" style="margin-top:20px;">
+        <div class="placeholder-card glass">
+          <p class="mini-label">Future Releases</p>
+          <h3>Upcoming Music / Release Archive</h3>
+          <p class="placeholder-note">
+            Use this section for singles, future albums, release calendars, rollout notes,
+            teaser images, credits, and links to additional projects you release later.
+          </p>
+        </div>
+
+        <div class="placeholder-card glass">
+          <p class="mini-label">Embedded Player / Visualizer</p>
+          <h3>Audio Preview Space</h3>
+          <p class="placeholder-note">
+            Replace this area with an embedded Spotify player, SoundCloud player, YouTube performance,
+            audio sampler, or custom visualizer for your music.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- ========================================================= -->
+    <!-- ===================== LAB NOTES SECTION ================= -->
+    <!-- ========================================================= -->
     <section id="lab-notes">
       <div class="section-head">
         <div>
@@ -1288,6 +1430,9 @@
       </div>
     </section>
 
+    <!-- ========================================================= -->
+    <!-- ==================== ASSET LIBRARY SECTION ============== -->
+    <!-- ========================================================= -->
     <section id="placeholder-assets">
       <div class="section-head">
         <div>
@@ -1324,6 +1469,9 @@
       </div>
     </section>
 
+    <!-- ========================================================= -->
+    <!-- ===================== RESUME KIT SECTION ================ -->
+    <!-- ========================================================= -->
     <section id="resume-kit">
       <div class="section-head">
         <div>
@@ -1370,6 +1518,9 @@
       </div>
     </section>
 
+    <!-- ========================================================= -->
+    <!-- ====================== CONTACT SECTION ================== -->
+    <!-- ========================================================= -->
     <section id="contact">
       <div class="contact-card glass">
         <p class="section-kicker">Contact</p>
@@ -1387,10 +1538,16 @@
     </section>
   </main>
 
+  <!-- ========================================================= -->
+  <!-- ========================= FOOTER ======================== -->
+  <!-- ========================================================= -->
   <footer class="container">
     <p>© <span id="year"></span> Rachel Atkeison • Aureine Audio Systems</p>
   </footer>
 
+  <!-- ========================================================= -->
+  <!-- ========================== MODAL ======================== -->
+  <!-- ========================================================= -->
   <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
     <div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="modal-close" id="modalClose" aria-label="Close project detail">✕</button>
@@ -1399,6 +1556,9 @@
   </div>
 
   <script>
+    // =========================================================
+    // ================= BACKGROUND STARS ======================
+    // =========================================================
     const stars = document.querySelector('.stars');
     const starPositions = [
       [8,12],[14,78],[22,90],[38,7],[48,82],[62,14],[71,72],[84,46],[21,54],[89,87],[58,41],[10,44],
@@ -1412,6 +1572,9 @@
       stars.appendChild(s);
     });
 
+    // =========================================================
+    // ===================== YEAR / CURSOR =====================
+    // =========================================================
     document.getElementById('year').textContent = new Date().getFullYear();
 
     document.addEventListener('mousemove', (e) => {
@@ -1419,6 +1582,9 @@
       document.documentElement.style.setProperty('--y', e.clientY + 'px');
     });
 
+    // =========================================================
+    // ==================== PROJECT FILTERS ====================
+    // =========================================================
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card[data-category]');
 
@@ -1437,6 +1603,9 @@
       });
     });
 
+    // =========================================================
+    // ====================== LAB NOTE TABS ====================
+    // =========================================================
     const tabs = document.querySelectorAll('.tab');
     const panels = document.querySelectorAll('.lab-panel');
     tabs.forEach(tab => {
@@ -1449,6 +1618,9 @@
       });
     });
 
+    // =========================================================
+    // ==================== PROJECT MODAL DATA =================
+    // =========================================================
     const projectDetails = {
       adaptive: {
         meta: 'Flagship Project • C++ • JUCE • DSP',
@@ -1530,6 +1702,9 @@
       }
     };
 
+    // =========================================================
+    // ===================== MODAL HANDLERS ====================
+    // =========================================================
     const modalBackdrop = document.getElementById('modalBackdrop');
     const modalContent = document.getElementById('modalContent');
     const modalClose = document.getElementById('modalClose');
