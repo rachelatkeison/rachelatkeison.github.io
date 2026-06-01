@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rachel Atkeison / Aureine, computer science student, creative technologist, artist, music maker, and software builder." />
-  <title>Rachel Atkeison | Aureine Portfolio</title>
+  <meta name="description" content="Rachel Atkeison is a Computer Science student building real-time collaboration systems, C++ audio tools, interactive environments, visualization engines, and polished frontend product experiences." />
+  <title>Rachel Atkeison | Software Engineering Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -5492,6 +5492,148 @@
     }
   </style>
 
+  <style id="recruiter-strength-pass">
+    #top .hero-proof { grid-template-columns: repeat(4,minmax(0,1fr)); }
+    #top .hero-proof div { min-height: 86px; }
+    #top .hero-proof b { color: var(--ink); letter-spacing: -.01em; }
+    #top .hero-proof span { display:block; }
+    #projects .project-choice span > span { line-height:1.35; }
+    #projects .guide-card b, #projects .proof-bloom b, #skills .skill-node b, #path .role-card b { letter-spacing:-.015em; }
+    #path .resume-list strong { color: var(--ink); }
+    @media (max-width: 920px) { #top .hero-proof { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+    @media (max-width: 520px) { #top .hero-proof { grid-template-columns: 1fr; } }
+  </style>
+
+
+
+  <style id="hero-intro-breathing-room-pass">
+    /* Final intro spacing pass: give the hero headline enough room so the final punctuation never clips. */
+    html body #top.hero {
+      min-height: min(1060px, calc(100svh - 8px)) !important;
+      padding-top: clamp(112px, 12vw, 172px) !important;
+      padding-bottom: clamp(88px, 9vw, 136px) !important;
+      overflow: visible !important;
+    }
+
+    html body #top .hero-copy {
+      gap: 21px !important;
+      overflow: visible !important;
+      min-width: 0 !important;
+    }
+
+    html body #top h1 {
+      max-width: 920px !important;
+      line-height: .90 !important;
+      letter-spacing: -.058em !important;
+      padding: 0 .12em .10em 0 !important;
+      margin: 0 -.06em 0 0 !important;
+      overflow: visible !important;
+      text-wrap: balance;
+    }
+
+    html body #top h1 .gradient {
+      display: inline-block !important;
+      padding-right: .10em !important;
+      padding-bottom: .08em !important;
+      margin-right: -.04em !important;
+      overflow: visible !important;
+    }
+
+    html body #top .hero-lede {
+      max-width: 760px !important;
+    }
+
+    @media (min-width: 1061px) {
+      html body #top.hero {
+        grid-template-columns: minmax(0, 1.14fr) minmax(360px, .86fr) !important;
+        gap: clamp(28px, 3.8vw, 56px) !important;
+      }
+    }
+
+    @media (max-width: 1060px) {
+      html body #top.hero {
+        padding-top: clamp(124px, 17vw, 166px) !important;
+        padding-bottom: clamp(80px, 11vw, 120px) !important;
+      }
+
+      html body #top h1 {
+        max-width: 100% !important;
+        font-size: clamp(3.55rem, 13vw, 7.1rem) !important;
+      }
+    }
+
+    @media (max-width: 520px) {
+      html body #top h1 {
+        font-size: clamp(3rem, 17vw, 4.7rem) !important;
+        line-height: .94 !important;
+        letter-spacing: -.05em !important;
+        padding-right: .16em !important;
+      }
+    }
+  </style>
+
+
+
+  <style id="section-flush-to-nav-fix">
+    /* Keep the intro spacious, but let every later section start directly under the sticky navigation when reached from the menu. */
+    html {
+      scroll-padding-top: 86px !important;
+    }
+
+    html body main > section:not(#top) {
+      padding-top: 0 !important;
+      scroll-margin-top: 86px !important;
+    }
+
+    html body main > section:not(#top) > .section-head,
+    html body main > section:not(#top) > .section-header,
+    html body main > section:not(#top) > header:first-child {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    @media (max-width: 760px) {
+      html {
+        scroll-padding-top: 76px !important;
+      }
+
+      html body main > section:not(#top) {
+        scroll-margin-top: 76px !important;
+      }
+    }
+  </style>
+
+
+  <style id="intro-flush-final-override">
+    /* Final spacing pass: keep the intro close to the nav, with a small safety gap so the hero never hides under it. */
+    html body main > #top.hero {
+      padding-top: clamp(24px, 2.2vw, 36px) !important;
+      margin-top: 0 !important;
+      scroll-margin-top: 86px !important;
+      align-items: start !important;
+      min-height: auto !important;
+      overflow: visible !important;
+    }
+
+    html body main > #top.hero .hero-copy,
+    html body main > #top.hero .hero-scene {
+      margin-top: 0 !important;
+      overflow: visible !important;
+    }
+
+    html body main > #top.hero h1 {
+      padding-top: .045em !important;
+      overflow: visible !important;
+    }
+
+    @media (max-width: 1060px) {
+      html body main > #top.hero {
+        padding-top: clamp(22px, 5vw, 34px) !important;
+        align-items: start !important;
+      }
+    }
+  </style>
+
 </head>
 <body data-chapter="top">
   <!-- These floating layers are decorative only, so they stay outside the real content flow. -->
@@ -5516,12 +5658,12 @@
 
   <main>
     <!-- Hero: introduce the person, the direction, and the three fastest paths into the work. -->
-    <section class="hero page" id="top" data-title="Prologue" data-guide="A first impression built around clarity, imagination, technical ambition, and a genuine love of learning.">
+    <section class="hero page" id="top" data-title="Prologue" data-guide="A recruiter-ready first impression: real systems, strong visual polish, clear technical proof, and a genuine drive to learn.">
       <div class="section-spell" aria-hidden="true"><span class="spell-glyph" style="left:10%;top:20%">✧</span><span class="spell-glyph" style="right:12%;bottom:18%;animation-delay:-2s">✿</span><span class="spell-line" style="left:22%;bottom:22%"></span><span class="spell-dot" style="left:72%;top:18%"></span><span class="spell-dot" style="left:24%;bottom:32%;animation-delay:-1.4s"></span></div>
       <div class="hero-copy reveal">
         <div class="kicker">Rachel Atkeison / Aureine</div>
         <h1>Software with a <span class="gradient">living pulse.</span></h1>
-        <p class="hero-lede">I’m a Kennesaw State Computer Science student, Dean’s List recipient, artist, and music maker building software that feels understandable, expressive, and useful to real people.</p>
+        <p class="hero-lede">Computer Science student building real-time collaboration systems, C++ audio tools, interactive 3D environments, visualization engines, and polished frontend product experiences. I combine engineering discipline with design and music instincts to make ambitious ideas understandable, usable, and demo-ready.</p>
         <!-- These are the three main review paths I want a recruiter to notice first. -->
         <div class="hero-actions">
           <a class="button primary intro-proof-cta" href="#projects" aria-label="See technical proof"><span>See</span><span>technical</span><span>proof</span><span aria-hidden="true">✦</span></a>
@@ -5531,25 +5673,26 @@
         </div>
         <article class="hero-scene glass">
           <div class="hero-scene-copy">
-            <div class="tiny">fresh-air opening</div>
-            <h3>A portfolio where code, design, and sound meet.</h3>
-            <p>I want the first impression to feel beautiful, but I want the closer look to matter even more: working projects, thoughtful decisions, and a clear record of how much I care about improving.</p>
+            <div class="tiny">recruiter scan</div>
+            <h3>Built to be beautiful first, then verifiable.</h3>
+            <p>The site is designed so a recruiter can skim quickly, then go deeper into screenshots, architecture notes, GitHub links, demos, and the decisions behind each working system.</p>
           </div>
           <div class="hero-art" aria-hidden="true"><span class="breeze b1"></span><span class="breeze b2"></span><span class="breeze b3"></span><span class="air-flower"><i></i><i></i><i></i><i></i><i></i><em></em></span></div>
         </article>
         <!-- The path cards give a second, more descriptive way into the same main sections. -->
         <div class="hero-paths" aria-label="Portfolio paths">
-          <button class="path-card glass" type="button" data-scroll="projects" data-title="Technical proof" data-text="Here is the clearest view of my technical growth: working systems, screenshots, architecture, and the decisions behind each build."><span>01</span><b>Technical proof</b><small>systems, screenshots, architecture</small></button>
-          <button class="path-card glass" type="button" data-scroll="art" data-title="Visual eye" data-text="Here is the visual language behind my work: hierarchy, atmosphere, color, and the instincts that make an interface feel intentional."><span>02</span><b>Visual eye</b><small>hierarchy, mood, worldbuilding</small></button>
-          <button class="path-card glass" type="button" data-scroll="music" data-title="Music proof" data-text="My music shows another side of my discipline: composition, iteration, release planning, and a deep care for how sound makes people feel."><span>03</span><b>Music proof</b><small>sound, taste, launch discipline</small></button>
-          <button class="path-card glass" type="button" data-scroll="path" data-title="Role fit" data-text="My foundation can grow in several directions: software engineering, creative technology, UI, front-end work, and music technology."><span>04</span><b>Role fit</b><small>software, UI, music tech</small></button>
+          <button class="path-card glass" type="button" data-scroll="projects" data-title="Technical proof" data-text="The fastest evidence: real-time collaboration, C++/JUCE audio, Unity interaction, visual systems, screenshots, demos, and code links."><span>01</span><b>Technical proof</b><small>systems, screenshots, architecture</small></button>
+          <button class="path-card glass" type="button" data-scroll="art" data-title="Visual eye" data-text="The design proof behind the interface: hierarchy, color, atmosphere, motion, and years of art practice translated into product polish."><span>02</span><b>Visual eye</b><small>hierarchy, mood, worldbuilding</small></button>
+          <button class="path-card glass" type="button" data-scroll="music" data-title="Music proof" data-text="The creator-side proof: composition, release discipline, taste, timing, and first-hand empathy for musician-centered software."><span>03</span><b>Music proof</b><small>sound, taste, launch discipline</small></button>
+          <button class="path-card glass" type="button" data-scroll="path" data-title="Role fit" data-text="The same foundation maps into software engineering, creative technology, UI/front-end, audio software, and product-minded technical roles."><span>04</span><b>Role fit</b><small>software, UI, music tech</small></button>
         </div>
         <div class="hero-proof" aria-label="Fast proof strip">
-          <div><b>CS + Dean’s List</b><span>technical growth and academic discipline</span></div>
-          <div><b>12 years of art/design</b><span>composition, color, visual hierarchy</span></div>
-          <div><b>Music releases</b><span>composition, production, release discipline</span></div>
+          <div><b>Real-time systems</b><span>WebSockets, asyncio, shared state, timing, replay</span></div>
+          <div><b>C++ audio depth</b><span>JUCE, DSP, MIDI, plugin workflow, synthesis</span></div>
+          <div><b>Interactive media</b><span>Unity, spatial audio, visual feedback, creative tech</span></div>
+          <div><b>Frontend polish</b><span>React, UI/UX, hierarchy, portfolio storytelling</span></div>
         </div>
-        <div class="simple-summary"><strong>Plain portfolio view:</strong><p>Rachel Atkeison is a Computer Science student, artist, music maker, and creative software builder focused on software engineering, UI/front-end, creative technology, and music technology.</p></div>
+        <div class="simple-summary"><strong>Plain portfolio view:</strong><p>Rachel Atkeison is a Computer Science student building real-time collaboration tools, C++ audio software, interactive environments, visualization systems, and polished frontend experiences for software engineering, creative technology, UI/front-end, and music technology roles.</p></div>
       </div>
       <!-- I keep the portrait and personal note near the top because I want the portfolio to feel like it belongs to a real person. -->
       <aside class="hero-side glass reveal" aria-label="Rachel Atkeison portrait and contact summary">
@@ -5557,12 +5700,12 @@
           <img src="assets/portrait/portrait.png" alt="Rachel Atkeison portrait" />
           <figcaption class="portrait-caption"><b>Rachel Atkeison / Aureine</b><span>Builder • artist • musician • creative technologist</span></figcaption>
         </figure>
-        <div class="quick-contact glass portrait-contact"><a class="portrait-contact-bar" href="mailto:rachel.atkeison@gmail.com" aria-label="Email Rachel Atkeison"><strong>rachel.atkeison@gmail.com</strong></a><p>I’m a curious, detail-sensitive person who genuinely loves learning. I care about making difficult ideas feel less intimidating and more human, and I bring the patience of a tutor, the eye of an artist, the ear of a musician, and the persistence of a student into every problem I work through.</p></div>
+        <div class="quick-contact glass portrait-contact"><a class="portrait-contact-bar" href="mailto:rachel.atkeison@gmail.com" aria-label="Email Rachel Atkeison"><strong>rachel.atkeison@gmail.com</strong></a><p>I am a curious, detail-sensitive builder who learns quickly and cares deeply about clarity. I bring the patience of a tutor, the eye of an artist, the ear of a musician, and the persistence of a student into every technical problem I work through.</p></div>
         <div class="side-grid">
-          <div class="side-card"><i>⌘</i><b>Build</b><span>systems, prototypes, and working tools</span></div>
+          <div class="side-card"><i>⌘</i><b>Build</b><span>real systems, prototypes, and working tools</span></div>
           <div class="side-card"><i>✿</i><b>Design</b><span>soft hierarchy, motion, and atmosphere</span></div>
           <div class="side-card"><i>♪</i><b>Sound</b><span>MIDI, synthesis, and musician workflows</span></div>
-          <div class="side-card"><i>♡</i><b>Learn</b><span>hungry to learn and ready to grow</span></div>
+          <div class="side-card"><i>♡</i><b>Grow</b><span>fast learning, feedback, and follow-through</span></div>
         </div>
 
         <div class="signature-map" aria-label="Identity map">
@@ -5577,13 +5720,13 @@
     <!-- Spark: this explains how I think and learn before the viewer gets into the project evidence. -->
     <section class="page" id="spark" data-title="Spark" data-guide="A personal map of how I move from curiosity to clarity: noticing, building, explaining, refining, and learning until the idea becomes real.">
       <div class="section-spell" aria-hidden="true"><span class="spell-glyph" style="left:7%;top:14%">✿</span><span class="spell-glyph" style="right:12%;bottom:18%">♡</span><span class="spell-line" style="right:20%;top:30%"></span><span class="spell-dot" style="left:62%;top:18%"></span></div>
-      <div class="section-head reveal"><div><div class="kicker">Chapter I • Spark</div><h2>The way I notice, build, and grow.</h2></div><p>Each signal shows a part of my process: finding the real problem, making the first usable version, explaining the idea clearly, and refining until the work feels intentional.</p></div>
+      <div class="section-head reveal"><div><div class="kicker">Chapter I • Spark</div><h2>The way I turn curiosity into useful work.</h2></div><p>My process is simple and disciplined: find the real problem, build the first honest version, explain the system clearly, then refine until the work becomes easier to use, evaluate, and improve.</p></div>
       <article class="chapter-art glass reveal">
         <div class="chapter-copy"><div class="kicker">rose origin garden</div><h3>A living identity map.</h3><p>Art, teaching, software, and learning are not separate parts of me. They are the way I approach problems with curiosity, patience, and care.</p><div class="map-grid" id="sparkMap"></div></div>
         <div class="animated-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">✿</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div>
       </article>
       <div class="about-layout">
-        <article class="story-card glass reveal"><div class="tiny">Core story</div><h3>I build until the idea becomes clear enough to share.</h3><p>I came to software through curiosity, music, art, and teaching. My strongest work lives where the technical layer is real, but the final experience still feels clear, warm, and understandable to a person using it.</p><div class="work-thread" id="workThread"></div></article>
+        <article class="story-card glass reveal"><div class="tiny">Core story</div><h3>I build until the idea can be tested, explained, and trusted.</h3><p>I came to software through curiosity, music, art, and teaching. My strongest work lives where the technical layer is real, the interface is readable, and the finished experience still feels human to the person using it.</p><div class="work-thread" id="workThread"></div></article>
         <div class="reveal"><div class="signal-grid" id="signalGrid"></div><div class="map-output" id="signalOutput"><b>Builder.</b><p>I turn vague ideas into working prototypes, then keep shaping the structure until another person could understand it, use it, and build on it.</p></div></div>
       </div>
     </section>
@@ -5591,8 +5734,8 @@
     <!-- Projects: this is the strongest technical section, so it gets the most detailed interaction. -->
     <section class="page" id="projects" data-title="Project Atelier" data-guide="My strongest technical work lives in working systems: real interfaces, screenshots, architecture, and problems I kept solving until they became clear.">
       <div class="section-spell" aria-hidden="true"><span class="spell-glyph" style="right:10%;top:18%">⌘</span><span class="spell-glyph" style="left:10%;bottom:20%">✦</span><span class="spell-line" style="left:22%;top:28%"></span><span class="spell-dot" style="right:30%;bottom:26%"></span></div>
-      <div class="section-head reveal"><div><div class="kicker">Chapter II • Project Atelier</div><h2>Projects that turn ambition into working systems.</h2></div><p>These projects show the way I learn best: I take an ambitious idea, make it real enough to test, then keep refining until the structure, interface, and purpose are visible.</p></div>
-      <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">glacier atelier</div><h3>A workshop of real, unfinished-to-finished growth.</h3><p>Each project carries a different kind of discipline: architecture, interface thinking, debugging, visual clarity, and the patience to keep improving after the first version works.</p><div class="map-grid" id="projectReadMap"></div></div><div class="animated-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">⌘</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
+      <div class="section-head reveal"><div><div class="kicker">Chapter II • Project Atelier</div><h2>Technical projects with visible architecture and proof.</h2></div><p>These are the strongest examples from my portfolio: real-time collaboration, C++ audio, Unity interaction, audio-reactive visualization, and MIDI intelligence. Each project shows what I built, what decisions mattered, and what kind of engineering growth it represents.</p></div>
+      <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">glacier atelier</div><h3>A workshop of systems, interfaces, and persistence.</h3><p>The projects are organized for fast review: choose a system, skim the stack, inspect the screenshot, then open the deeper proof for architecture, interaction, real-time behavior, visual design, and growth.</p><div class="map-grid" id="projectReadMap"></div></div><div class="animated-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">⌘</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
       <div class="project-workshop">
         <div class="project-menu reveal" id="projectMenu"></div>
         <article class="project-stage glass reveal">
@@ -5612,7 +5755,7 @@
     <!-- Art: this section shows the visual training behind my interface instincts. -->
     <section class="page" id="art" data-title="Art Garden" data-guide="My art is part of my technical voice because it trained my eye for hierarchy, atmosphere, worldbuilding, and motion.">
       <div class="section-spell" aria-hidden="true"><span class="spell-glyph" style="left:8%;top:16%">❀</span><span class="spell-glyph" style="right:12%;bottom:16%">✿</span><span class="spell-line" style="left:24%;bottom:24%"></span><span class="spell-dot" style="right:28%;top:22%"></span></div>
-      <div class="section-head reveal"><div><div class="kicker">Chapter III • Art Garden</div><h2>The visual language that shapes the code.</h2></div><p>Each piece shows a visual instinct I bring into technical work: composition, hierarchy, mood, character, motion, and a sense of atmosphere that still stays readable.</p></div>
+      <div class="section-head reveal"><div><div class="kicker">Chapter III • Art Garden</div><h2>The design eye behind the interfaces.</h2></div><p>This section proves that the polish is not random decoration. It comes from years of practicing composition, hierarchy, mood, character, motion, and readable atmosphere.</p></div>
       <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">spring art garden</div><h3>Artwork becomes the root system for the interface.</h3><p>My art practice taught me how to control attention, emotion, rhythm, and detail. Those same instincts help me design interfaces and creative tools that feel intentional instead of accidental.</p><div class="map-grid" id="artReadMap"></div></div><div class="animated-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">❀</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
       <article class="art-statement-box glass reveal" id="artStatementBox">
         <figure class="art-feature" id="artFeature">
@@ -5641,8 +5784,8 @@
     <!-- Music: this connects AUREINE releases to audio intuition, product taste, and follow-through. -->
     <section class="page" id="music" data-title="Music Garden" data-guide="My music work shows taste, discipline, iteration, systems thinking, and the ability to carry an idea all the way from private sketch to public release.">
       <div class="section-spell" aria-hidden="true"><span class="spell-glyph" style="left:9%;top:14%">♪</span><span class="spell-glyph" style="right:13%;bottom:18%;animation-delay:-2s">✧</span><span class="spell-line" style="right:22%;top:28%"></span><span class="spell-dot" style="left:30%;bottom:25%"></span></div>
-      <div class="section-head reveal"><div><div class="kicker">Chapter IV • Music Garden</div><h2>Music as taste, discipline, and follow-through.</h2></div><p>My AUREINE releases are not separate from my technical work. They show how I think about structure, emotion, iteration, production quality, visual identity, and the complete experience around sound.</p></div>
-      <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">soft audio signal</div><h3>Sound gives my technical work a stronger human center.</h3><p>Making music taught me to hear small details, build emotional structure, finish public releases, and understand why creative tools need to feel intuitive from the creator’s side.</p><div class="map-grid" id="musicReadMap"></div></div><div class="animated-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">♪</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
+      <div class="section-head reveal"><div><div class="kicker">Chapter IV • Music Garden</div><h2>Music as product instinct, timing, and follow-through.</h2></div><p>My AUREINE releases support my technical work because they train the same instincts audio and product teams need: structure, iteration, pacing, polish, emotional feedback, and creator-side empathy.</p></div>
+      <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">soft audio signal</div><h3>Sound gives the software a practical human center.</h3><p>Because I make music, I notice timing, feedback, workflow friction, and whether a tool keeps a creator in flow. That perspective makes my audio and interface projects more grounded.</p><div class="map-grid" id="musicReadMap"></div></div><div class="animated-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">♪</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
       <div class="music-showcase reveal">
         <article class="music-player-card glass">
           <div class="music-player-copy"><div class="tiny">released album</div><h3>First Frost, Vol. I (Aureine)</h3><p>A cozy winter lofi release that brings composition, atmosphere, mixing, branding, and storytelling into one finished listening experience.</p></div>
@@ -5675,33 +5818,33 @@
     <!-- Skills: grouped by what I can actually make with them instead of a disconnected list of tools. -->
     <section class="page" id="skills" data-title="Capability Garden" data-guide="My skills are grouped by what they help me build because useful outcomes matter more to me than inflated ratings.">
       <div class="section-spell" aria-hidden="true"><span class="spell-glyph" style="left:10%;top:16%">✦</span><span class="spell-glyph" style="right:12%;bottom:18%">⌘</span><span class="spell-line" style="right:24%;top:30%"></span><span class="spell-dot" style="left:28%;bottom:26%"></span></div>
-      <div class="section-head reveal"><div><div class="kicker">Chapter V • Capability Garden</div><h2>Capabilities tied to real outcomes.</h2></div><p>I do not want a tool list that only sounds impressive. I want every skill here to connect back to something I have built, studied, practiced, or kept improving.</p></div>
-      <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">mint constellation</div><h3>Skills shown as living clusters, not empty labels.</h3><p>I learn by making things real. Tools become outcomes, outcomes become confidence, and each project gives me another reason to improve.</p><div class="map-grid" id="skillReadMap"></div></div><div class="animated-art skill-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">✦</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
+      <div class="section-head reveal"><div><div class="kicker">Chapter V • Capability Garden</div><h2>Skills connected to evidence, not buzzwords.</h2></div><p>Every skill cluster connects to a project, course, tool, or habit I have practiced. The goal is to make my range easy to skim and easy to verify.</p></div>
+      <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">mint constellation</div><h3>Tools are grouped by what they help me build.</h3><p>I want the skills section to feel earned. Systems, audio, UI, data, creative tech, and learning habits all point back to working projects and visible growth.</p><div class="map-grid" id="skillReadMap"></div></div><div class="animated-art skill-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">✦</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
       <div class="skills-layout"><article class="skill-map glass reveal"><div class="skill-map-title"><div class="tiny">Capability garden</div><h3>Choose the kind of work you want to understand first.</h3><p>Each cluster connects tools to the kind of work I can build, explain, and keep growing.</p></div><div class="skill-node-grid" id="skillNodeGrid"></div></article><article class="skill-info glass reveal"><div><div class="tiny">Selected capability</div><h3 id="skillTitle">Systems</h3><p id="skillText">Organized software that can grow beyond the first working version.</p></div><div class="capability-cloud" id="capabilityCloud"></div><div><div class="tiny">Tools</div><div class="tool-cloud" id="toolCloud"></div></div><div><div class="tiny">Related proof</div><div class="tool-cloud" id="skillProof"></div></div></article></div>
     </section>
 
     <!-- Path: the role compass translates the same body of work into different team needs. -->
     <section class="page" id="path" data-title="Path" data-guide="A role compass showing how the same drive can support software, creative technology, UI, front-end, and music technology work.">
       <div class="section-spell" aria-hidden="true"><span class="spell-glyph" style="right:10%;top:18%">☼</span><span class="spell-glyph" style="left:10%;bottom:18%">→</span><span class="spell-line" style="left:20%;top:30%"></span><span class="spell-dot" style="right:28%;bottom:26%"></span></div>
-      <div class="section-head reveal"><div><div class="kicker">Chapter VI • Path</div><h2>One foundation, several useful directions.</h2></div><p>I am not trying to fit into one narrow box. I am building a foundation that can grow toward software, creative technology, UI, front-end work, and music technology with the same level of commitment.</p></div>
-      <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">sunset compass</div><h3>Choose the direction where my work can become useful.</h3><p>The same curiosity shows up in every direction: I want to build things that are technically solid, visually clear, and genuinely useful to the people who use them.</p><div class="map-grid" id="pathReadMap"></div></div><div class="animated-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">☼</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
+      <div class="section-head reveal"><div><div class="kicker">Chapter VI • Path</div><h2>One technical foundation, several strong role fits.</h2></div><p>The same portfolio can support software engineering, creative technology, UI/front-end, audio software, and product-minded roles because the underlying strengths are consistent: architecture, clarity, iteration, and user empathy.</p></div>
+      <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">sunset compass</div><h3>Different teams can read the same work through different lenses.</h3><p>A systems team can look for architecture, a product team can look for clarity, a creative technology team can look for interaction, and an audio team can look for timing, synthesis, and musician empathy.</p><div class="map-grid" id="pathReadMap"></div></div><div class="animated-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">☼</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
       <!-- Resume and role fit sit together so practical facts and career direction are easy to compare. -->
-      <div class="path-grid"><article class="resume-card glass reveal"><h3>Resume kit</h3><p>The quick facts behind the work, kept simple so the projects have room to speak for themselves.</p><div class="hero-actions"><a class="button primary" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a><a class="button" href="https://rachelatkeison.github.io" target="_blank" rel="noreferrer">Live Portfolio ↗</a></div><ul class="resume-list"><li>Kennesaw State University, Computer Science with Data Science focus</li><li>Dean’s List recipient</li><li>Audio, UI, creative systems, and real-time interaction work</li><li>12 years of art/design background supporting visual communication</li></ul></article><article class="role-compass glass reveal"><div class="tiny">Role compass</div><div class="role-grid" id="roleGrid"></div><div class="role-output" id="roleOutput"><b>Software Engineer lens.</b><p>This direction fits the part of me that likes turning unclear problems into stable, readable, working systems.</p><p><strong>What I would bring:</strong> patience, curiosity, documentation, and the drive to make solutions understandable to the next person too.</p></div></article></div>
+      <div class="path-grid"><article class="resume-card glass reveal"><h3>Resume kit</h3><p>The quick facts behind the work, kept simple so the projects have room to speak for themselves.</p><div class="hero-actions"><a class="button primary" href="resume.pdf" download="Rachel_Atkeison_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a><a class="button" href="https://rachelatkeison.github.io" target="_blank" rel="noreferrer">Live Portfolio ↗</a></div><ul class="resume-list"><li><strong>Kennesaw State University:</strong> B.S. Computer Science, expected 2027</li><li><strong>Academic strength:</strong> Dean’s List recipient</li><li><strong>Technical proof:</strong> real-time systems, C++/JUCE audio, Unity interaction, Python visualization, frontend UI</li><li><strong>Creative edge:</strong> 12 years of art/design experience plus original music releases</li><li><strong>Team value:</strong> former CS and English tutor with strong explanation, patience, and feedback skills</li></ul></article><article class="role-compass glass reveal"><div class="tiny">Role compass</div><div class="role-grid" id="roleGrid"></div><div class="role-output" id="roleOutput"><b>Software Engineer lens.</b><p>This direction fits the part of me that likes turning unclear problems into stable, readable, working systems.</p><p><strong>What I would bring:</strong> patience, curiosity, documentation, and the drive to make solutions understandable to the next person too.</p></div></article></div>
     </section>
 
     <!-- Contact: the closing section removes friction and makes the next step obvious. -->
     <section class="page" id="contact" data-title="Contact" data-guide="Rachel’s direct contact information stays clear, with supporting links for code, projects, resume, art, and music.">
       <div class="section-spell" aria-hidden="true"><span class="spell-glyph" style="left:9%;top:17%">☾</span><span class="spell-glyph" style="right:12%;bottom:16%">✉</span><span class="spell-line" style="right:20%;top:30%"></span><span class="spell-dot" style="left:32%;bottom:28%"></span></div>
-      <div class="section-head reveal"><div><div class="kicker">Final Chapter • Contact</div><h2>The clearest next step is a conversation.</h2></div><p>The best way to reach me is direct. I am excited to learn, contribute, and bring careful technical work, strong visual instincts, and sincere creative energy to the right team.</p></div>
+      <div class="section-head reveal"><div><div class="kicker">Final Chapter • Contact</div><h2>The clearest next step is a conversation.</h2></div><p>The best way to reach me is direct. I am ready to learn quickly, contribute carefully, and bring real technical work, strong visual instincts, and sincere creative energy to the right team.</p></div>
       <article class="chapter-art glass reveal"><div class="chapter-copy"><div class="kicker">moonlit cyan</div><h3>I would love to hear where my work could help.</h3><p>Email is the clearest first step. The surrounding links are there if you want to see more of my code, projects, design, art, or music.</p><div class="map-grid" id="contactReadMap"></div></div><div class="animated-art" aria-hidden="true"><span class="ring"></span><span class="line"></span><span class="glyph">☾</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span></div></article>
       <div class="contact-shell reveal">
         <div class="contact-main">
           <aside class="contact-panel glass"><div class="tiny">Contact focus</div><h3>What would you like to explore first?</h3><div class="contact-routes" id="contactRoutes"></div></aside>
-          <article class="contact-star glass" id="contactStar"><div class="contact-star-art" aria-hidden="true"></div><div class="contact-star-inner"><span class="contact-label">direct contact</span><div class="contact-name">Rachel Atkeison</div><a class="contact-email" href="mailto:rachel.atkeison@gmail.com">rachel.atkeison@gmail.com</a><p class="contact-status" id="contactStatus">Email me directly for internships, software roles, creative technology, UI/front-end, music technology, collaborations, or project conversations.</p><div class="hero-actions"><a class="button primary" href="mailto:rachel.atkeison@gmail.com">Email me ✉</a><a class="button" href="resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a></div></div></article>
+          <article class="contact-star glass" id="contactStar"><div class="contact-star-art" aria-hidden="true"></div><div class="contact-star-inner"><span class="contact-label">direct contact</span><div class="contact-name">Rachel Atkeison</div><a class="contact-email" href="mailto:rachel.atkeison@gmail.com">rachel.atkeison@gmail.com</a><p class="contact-status" id="contactStatus">Email me directly for internships, software roles, creative technology, UI/front-end, music technology, collaborations, or project conversations.</p><div class="hero-actions"><a class="button primary" href="mailto:rachel.atkeison@gmail.com">Email me ✉</a><a class="button" href="resume.pdf" download="Rachel_Atkeison_Resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a></div></div></article>
           <aside class="contact-panel glass current-focus-panel">
             <div class="tiny">Current focus</div>
             <h3 id="currentFocusTitle">What I am building toward right now</h3>
-            <p id="currentFocusText">I am focused on becoming the kind of engineer who can join a team, learn quickly, ask thoughtful questions, and turn messy ideas into clear, working software people can actually use.</p>
+            <p id="currentFocusText">I am focused on becoming the kind of engineer who can join a team, learn the codebase quickly, ask thoughtful questions, and turn messy ideas into clear, working software people can actually use.</p>
             <div class="focus-stack" aria-label="Current growth focus areas">
               <div><b>Stronger systems</b><span>cleaner architecture, better debugging habits, readable project structure</span></div>
               <div><b>Creative technology depth</b><span>real-time audio, interaction design, Unity, JUCE, and musician-centered tools</span></div>
@@ -5715,7 +5858,7 @@
     </section>
   </main>
 
-  <footer class="page">© <span id="year"></span> Rachel Atkeison / Aureine. Built with code, flowers, sound, and a lot of care.</footer>
+  <footer class="page">© <span id="year"></span> Rachel Atkeison / Aureine. Built with code, systems, sound, and a lot of care.</footer>
 
   <!-- Deep read modal: this opens richer project notes without making the main page too long. -->
   <div class="modal" id="projectModal" hidden><div class="modal-backdrop" data-close-modal></div><article class="modal-card"><button class="modal-close" type="button" data-close-modal aria-label="Close project details">×</button><div class="tiny">Project deep read</div><h2 id="modalTitle">Project</h2><p id="modalSummary">Summary</p><div class="modal-grid"><div class="modal-box"><h3>Capabilities</h3><ul id="modalCapabilities"></ul></div><div class="modal-box"><h3>Why this matters</h3><p id="modalStrength">This shows the kind of real work I am ready to keep growing into.</p></div></div><div class="modal-gallery" id="modalGallery"></div></article></div>
@@ -5753,60 +5896,506 @@
 
     // Project data powers the menu, screenshots, gallery buttons, and deep read content from one source.
     const projects = {
-      'aureine-live': {
-        title:'Aureine Live', tag:'Python / WebSockets / AsyncIO / Real-Time Systems',
-        short:'A real-time distributed music collaboration engine where timing, space, and interaction come together across networked users.',
-        github:'https://github.com/rachelatkeison/Aureine-Live-Real-Time-Distributed-Music-Collaboration-Engine', demo:'https://www.youtube.com/watch?v=v194bhEgZw4',
-        stack:['Python','PySide6','NumPy','sounddevice','asyncio','WebSockets'],
-        images:['assets/aureine-live/01-main-ui.png','assets/aureine-live/02-note-field.png','assets/aureine-live/03-spatial-view.png','assets/aureine-live/04-replay-timeline.png'],
-        strength:'I built this because I wanted to challenge myself with real-time complexity: networking, shared state, timing, audio response, and visual feedback all working together.',
-        guide:[['What I built','A distributed music system where note events, timing, participants, and visual feedback all have to stay connected.'],['What I pushed myself to prove','It turns a difficult systems problem into something visible, testable, and easier to explain.'],['What I’m proud of','I’m proud that synchronization, jitter handling, shared state, and UI feedback are not hidden. They are visible parts of the experience.']],
-        capabilities:['Multi-user session state and WebSocket event flow','Latency-aware scheduling and adaptive jitter buffering','Real-time polyphonic soft synth and spatial depth shaping','Chord detection and harmonic performance labels','Recording/replay timeline reconstruction'],
-        proof:{Architecture:'The system separates networking, synchronization, buffering, audio, and interface logic so the project can stay understandable as it grows.',Interface:'Participant lanes, note trails, transport state, and performance feedback make complex timing easier to read.',Realtime:'The central challenge is timing, because shared musical performance only works when response and scheduling feel stable.',Visual:'The screenshots show that the system has a clear surface, not only backend logic.',Growth:'The project can keep expanding toward richer collaboration, recording, AI assistance, and performance tools.'},
-        views:{overview:['Networked instrument','Aureine Live behaves like a shared musical system, where notes, timing, AI response, and visual feedback are treated as one event-driven experience.',['Distributed collaboration','Server-authoritative events','Shared transport','Live density feedback'],0,'Main interface'],interface:['Interface','The UI makes complex timing and performance information visible, so participants, note activity, synchronization, and musical density are readable at a glance.',['Participant lanes','Live note trails','Transport state','Feedback loops'],1,'Live note field'],system:['System architecture','Networking, synchronization, jitter buffering, audio synthesis, UI rendering, and AI response are separated so the system can stay expressive under real network conditions.',['Networking layer','Sync engine','Jitter buffer','Audio engine','AI companion'],2,'Spatial system'],process:['Process + outcome','The process turns a difficult real-time problem into visible parts: session state, timing correction, performance feedback, and replay.',['Prototype session flow','Test timing stability','Visualize activity','Replay layer'],3,'Replay timeline']}
+      "aureine-live": {
+            "title": "Aureine Live",
+            "tag": "Python / WebSockets / AsyncIO / Real-Time Systems",
+            "short": "A distributed music collaboration engine that turns timing, shared state, audio feedback, and participant activity into one real-time creative workspace.",
+            "github": "https://github.com/rachelatkeison/Aureine-Live-Real-Time-Distributed-Music-Collaboration-Engine",
+            "demo": "https://www.youtube.com/watch?v=v194bhEgZw4",
+            "stack": [
+                  "Python",
+                  "PySide6",
+                  "NumPy",
+                  "sounddevice",
+                  "asyncio",
+                  "WebSockets"
+            ],
+            "images": [
+                  "assets/aureine-live/01-main-ui.png",
+                  "assets/aureine-live/02-note-field.png",
+                  "assets/aureine-live/03-spatial-view.png",
+                  "assets/aureine-live/04-replay-timeline.png"
+            ],
+            "strength": "This is the strongest systems project in the portfolio: it shows networking, shared state, timing, audio response, visualization, and interface clarity working together in one demo-ready application.",
+            "guide": [
+                  [
+                        "What I built",
+                        "A networked music system where users, note events, transport state, visual feedback, and replay data stay connected in real time."
+                  ],
+                  [
+                        "Engineering challenge",
+                        "The hard part was making timing and state visible enough to debug, explain, and experience instead of hiding the complexity."
+                  ],
+                  [
+                        "Recruiter signal",
+                        "This project proves I can work through ambiguous systems problems and turn them into a readable product surface."
+                  ]
+            ],
+            "capabilities": [
+                  "Multi-user WebSocket event flow and shared session state",
+                  "Latency-aware scheduling, jitter handling, and timing visualization",
+                  "Participant lanes, note trails, transport state, and replay timeline",
+                  "Real-time soft synth behavior and spatial depth feedback",
+                  "Modular separation between networking, synchronization, audio, rendering, and UI"
+            ],
+            "proof": {
+                  "Architecture": "The project separates networking, synchronization, buffering, audio, rendering, and interface concerns so the system can grow without becoming one tangled script.",
+                  "Interface": "Participant lanes, note trails, transport status, density feedback, and replay views make invisible timing behavior easier to inspect.",
+                  "Realtime": "The core problem is live coordination: events need to feel stable, responsive, and understandable while multiple users and musical actions change the shared state.",
+                  "Visual": "The screenshots show a real product surface, not only backend logic. The interface communicates who is active, what is happening, and how the session evolves.",
+                  "Growth": "This can expand toward richer recording, remote performance rooms, adaptive latency tools, and collaboration features for musicians."
+            },
+            "views": {
+                  "overview": [
+                        "Networked creative system",
+                        "Aureine Live behaves like a shared instrument where note events, users, timing, replay, and visual feedback become one event-driven experience.",
+                        [
+                              "Distributed collaboration",
+                              "Shared transport",
+                              "Live state feedback",
+                              "Replay timeline"
+                        ],
+                        0,
+                        "Main interface"
+                  ],
+                  "interface": [
+                        "Readable real-time UI",
+                        "The interface makes complex timing and participant activity visible so the system feels understandable instead of abstract.",
+                        [
+                              "Participant lanes",
+                              "Note trails",
+                              "Transport state",
+                              "Feedback loops"
+                        ],
+                        1,
+                        "Live note field"
+                  ],
+                  "system": [
+                        "Separated system layers",
+                        "Networking, synchronization, jitter handling, audio synthesis, UI rendering, and response logic are kept as distinct responsibilities.",
+                        [
+                              "Networking layer",
+                              "Sync engine",
+                              "Jitter buffer",
+                              "Audio engine",
+                              "Rendering layer"
+                        ],
+                        2,
+                        "Spatial system"
+                  ],
+                  "process": [
+                        "Testable outcome",
+                        "The project turns a difficult real-time problem into visible checkpoints: session state, timing correction, activity display, and replay.",
+                        [
+                              "Prototype session flow",
+                              "Test timing behavior",
+                              "Visualize activity",
+                              "Review replay"
+                        ],
+                        3,
+                        "Replay timeline"
+                  ]
+            }
       },
-      lumenbloom: {
-        title:'LumenBloom', tag:'C++ / JUCE / DSP / Synth Plugin', short:'A polyphonic synthesizer plugin built to feel responsive, atmospheric, and genuinely playable.',
-        github:'https://github.com/rachelatkeison/LumenBloom', demo:'https://www.youtube.com/watch?v=n7tlvAG7nyU', stack:['C++','JUCE','CMake','DSP','VST3','MIDI'],
-        images:['assets/lumenbloom/01-main-interface.png','assets/lumenbloom/02-clean-layout.png','assets/lumenbloom/03-preset-menu.png'],
-        strength:'I built this to push myself into serious music technology work: C++/JUCE architecture, real-time audio, DSP thinking, presets, and custom UI design.',
-        guide:[['What I built','A custom synth/plugin project with voice architecture, modulation, effects, presets, and a playable interface.'],['What I pushed myself to prove','It connects lower-level audio engineering with the feeling of an instrument someone can actually play.'],['What I’m proud of','I’m proud that it feels like an instrument while still showing signal flow, voice separation, UI feedback, and DAW-facing workflow.']],
-        capabilities:['Polyphonic voice architecture','Dual oscillators and wavetable blending','ADSR, multimode filtering, and LFO modulation','Delay, reverb, stereo widening, and soft drive','Preset save/load and DAW plugin workflow'],
-        proof:{Architecture:'Voices, oscillators, envelopes, filters, modulation, effects, and UI are treated as separate concerns.',Interface:'The interface makes the instrument easier to play, tweak, and understand instead of feeling like a wall of controls.',Realtime:'Real-time audio requires smooth response and safe signal flow while sound is being generated.',Visual:'Screenshots show an instrument surface with controls, presets, and visual feedback instead of a hidden audio experiment.',Growth:'The project can deepen through modulation routing, preset design, audio polish, and expanded UI states.'},
-        views:{overview:['Adaptive synth engine','LumenBloom is built as an instrument, not just an oscillator demo. Voice architecture, modulation, effects, presets, and a custom interface work together.',['Polyphonic synth','Wavetable blending','ADSR/filter/modulation','Effects + presets'],0,'Main interface'],interface:['Interface','The interface emphasizes visual feedback, playable controls, and smooth interaction so the synth feels clear and expressive.',['Custom JUCE UI','Waveform visualizer','Envelope visualization','Interactive keyboard'],1,'Clean layout'],system:['Signal flow','MIDI creates voices, then those voices move through oscillators, envelope, filter, modulation, effects, and output in real time.',['MIDI input','Voice allocation','Oscillator + envelope','Filter/mod/effects'],0,'Signal flow'],process:['Process + outcome','The process focused on making the engine modular enough to expand while keeping the first version playable and demonstrable.',['Build voice system','Add modulation paths','Design controls','Test in DAW'],2,'Preset workflow']}
+      "lumenbloom": {
+            "title": "LumenBloom",
+            "tag": "C++ / JUCE / DSP / Synth Plugin",
+            "short": "A C++/JUCE polyphonic synthesizer plugin built around real-time audio architecture, musician-facing controls, presets, and a polished instrument interface.",
+            "github": "https://github.com/rachelatkeison/LumenBloom",
+            "demo": "https://www.youtube.com/watch?v=n7tlvAG7nyU",
+            "stack": [
+                  "C++",
+                  "JUCE",
+                  "CMake",
+                  "DSP",
+                  "VST3",
+                  "MIDI"
+            ],
+            "images": [
+                  "assets/lumenbloom/01-main-interface.png",
+                  "assets/lumenbloom/02-clean-layout.png",
+                  "assets/lumenbloom/03-preset-menu.png"
+            ],
+            "strength": "This project gives the portfolio hard technical depth: C++, real-time audio constraints, plugin structure, DSP modules, custom UI, and musician-centered product thinking.",
+            "guide": [
+                  [
+                        "What I built",
+                        "A playable synthesizer plugin with voice handling, oscillators, envelopes, filtering, modulation, effects, presets, and custom controls."
+                  ],
+                  [
+                        "Engineering challenge",
+                        "Real-time audio forces careful separation between signal flow, UI behavior, plugin state, and performance safety."
+                  ],
+                  [
+                        "Recruiter signal",
+                        "It shows willingness to learn lower-level engineering and build a tool that can be played, inspected, and extended."
+                  ]
+            ],
+            "capabilities": [
+                  "Polyphonic voice allocation and MIDI-controlled synthesis",
+                  "Oscillator, wavetable, envelope, filter, modulation, and effects modules",
+                  "Preset workflow and DAW-facing plugin structure",
+                  "Custom JUCE interface with visual feedback and playable controls",
+                  "Real-time signal flow organized for future expansion"
+            ],
+            "proof": {
+                  "Architecture": "Voices, oscillators, envelopes, filters, modulation, effects, presets, UI, and plugin state are treated as separate responsibilities.",
+                  "Interface": "The controls are organized like an instrument surface, so sound design feels playable instead of buried behind technical labels.",
+                  "Realtime": "Audio work requires immediate response, stable signal flow, and careful decisions because sound is generated while the user interacts.",
+                  "Visual": "The interface gives the synth a finished identity with control sections, preset access, and visual feedback that make the project easier to understand quickly.",
+                  "Growth": "The system can grow through deeper modulation routing, stronger preset design, more effects, and expanded visualization states."
+            },
+            "views": {
+                  "overview": [
+                        "Playable synth plugin",
+                        "LumenBloom is built as an instrument, not just an oscillator demo. Voice architecture, modulation, effects, presets, and UI work together.",
+                        [
+                              "Polyphonic synth",
+                              "Wavetable blending",
+                              "ADSR/filter/modulation",
+                              "Effects + presets"
+                        ],
+                        0,
+                        "Main interface"
+                  ],
+                  "interface": [
+                        "Musician-facing controls",
+                        "The interface emphasizes visual feedback, playable controls, and clear sections so the synth feels expressive and reviewable.",
+                        [
+                              "Custom JUCE UI",
+                              "Waveform view",
+                              "Envelope view",
+                              "Preset menu"
+                        ],
+                        1,
+                        "Clean layout"
+                  ],
+                  "system": [
+                        "Real-time signal flow",
+                        "MIDI creates voices, then those voices move through oscillators, envelope, filter, modulation, effects, and output.",
+                        [
+                              "MIDI input",
+                              "Voice allocation",
+                              "Oscillator + envelope",
+                              "Filter/mod/effects"
+                        ],
+                        0,
+                        "Signal flow"
+                  ],
+                  "process": [
+                        "Plugin workflow",
+                        "The project focuses on making the engine modular enough to extend while keeping the first version playable inside a real plugin structure.",
+                        [
+                              "Build voice system",
+                              "Add modulation",
+                              "Design controls",
+                              "Test presets"
+                        ],
+                        2,
+                        "Preset workflow"
+                  ]
+            }
       },
-      cloudstage: {
-        title:'CloudStage MR Studio', tag:'Unity / JUCE / Spatial Audio / Creative Tech', short:'A mixed-reality inspired spatial audio performance environment powered by an external real-time synthesis bridge.',
-        github:'https://github.com/rachelatkeison/CloudStage-MR-Studio', demo:'https://youtu.be/NzFsLJeiPeg', stack:['Unity','C#','JUCE','C++','MIDI','Spatial audio'],
-        images:['assets/cloudstage/01-environment-stage.png','assets/cloudstage/02-active-stage-view.png','assets/cloudstage/04-performer-view.png','assets/cloudstage/05-piano-interaction.png','assets/cloudstage/07-synth-bridge-running.png'],
-        strength:'I built this to stretch across creative technology: Unity interaction, spatial design, role-based experience, and real-time audio integration.',
-        guide:[['What I built','A spatial performance environment where world design, role, movement, and sound all connect.'],['What I pushed myself to prove','It shows range across game-engine interaction, creative technology, and real-time audio integration.'],['What I’m proud of','I’m proud of the way environment cues, performer/listener roles, and the Unity-to-audio bridge work together as one experience.']],
-        capabilities:['3D interactive performance space','Listener and performer role modes','Playable in-world keyboard','Unity → JUCE event pipeline','Reactive lighting and spatial audio behavior'],
-        proof:{Architecture:'Unity handles the world and interaction while the audio bridge handles synthesis, keeping responsibilities clear.',Interface:'Menus, performer views, and spatial cues help users understand what they can do inside an experimental world.',Realtime:'Movement, role, interaction, and sound are designed to respond as part of one live experience.',Visual:'The stage screenshots immediately communicate the creative-technology identity of the work.',Growth:'It can grow into richer performance modes, spatial interactions, and more expressive links between sound and world design.'},
-        views:{overview:['Spatial music environment','CloudStage explores how movement, role, and space can become part of an instrument.',['3D stage environment','Performer/listener roles','Spatial audio','Reactive feedback'],0,'Environment'],interface:['Interface','The experience is designed around role clarity: menus, performer view, and spatial cues help users understand where they are and what they can do.',['Main menu flow','Performer view','Stage feedback','Piano interaction'],2,'Performer view'],system:['System architecture','Unity handles interaction and world state while the external JUCE bridge handles synthesis, separating visual interaction from audio generation.',['Unity input','MIDI translation','Synth bridge','Real-time output'],4,'Synth bridge'],process:['Process + outcome','The project shows how I think across engines: game interaction, sound generation, spatial design, and system boundaries.',['Scene design','Input testing','Audio bridge integration','Role design'],3,'Piano interaction']}
+      "cloudstage": {
+            "title": "CloudStage MR Studio",
+            "tag": "Unity / JUCE / Spatial Audio / Creative Tech",
+            "short": "An interactive 3D performance environment that connects Unity interaction, role-based experience design, spatial audio behavior, and an external synthesis bridge.",
+            "github": "https://github.com/rachelatkeison/CloudStage-MR-Studio",
+            "demo": "https://youtu.be/NzFsLJeiPeg",
+            "stack": [
+                  "Unity",
+                  "C#",
+                  "JUCE",
+                  "C++",
+                  "MIDI",
+                  "Spatial audio"
+            ],
+            "images": [
+                  "assets/cloudstage/01-environment-stage.png",
+                  "assets/cloudstage/02-active-stage-view.png",
+                  "assets/cloudstage/04-performer-view.png",
+                  "assets/cloudstage/05-piano-interaction.png",
+                  "assets/cloudstage/07-synth-bridge-running.png"
+            ],
+            "strength": "This project shows integration range: game-engine interaction, spatial design, audio behavior, role-based UX, and a bridge between a visual world and real-time synthesis.",
+            "guide": [
+                  [
+                        "What I built",
+                        "A spatial performance prototype where movement, role, world design, lighting, and sound behave like parts of one instrument."
+                  ],
+                  [
+                        "Engineering challenge",
+                        "The project needed clear boundaries between Unity interaction and external audio behavior so the experience stayed understandable."
+                  ],
+                  [
+                        "Recruiter signal",
+                        "It shows I can bridge creative direction with technical systems and make experimental interaction easier to navigate."
+                  ]
+            ],
+            "capabilities": [
+                  "3D interactive performance space and role-based experience flow",
+                  "Listener and performer modes with in-world controls",
+                  "Playable keyboard interaction and spatial cues",
+                  "Unity-to-JUCE synthesis bridge concept",
+                  "Reactive lighting, stage feedback, and spatial audio behavior"
+            ],
+            "proof": {
+                  "Architecture": "Unity manages world interaction and role behavior while the audio bridge handles synthesis, keeping responsibilities clear across tools.",
+                  "Interface": "Menus, performer views, keyboard interaction, and spatial cues help users understand what they can do inside an experimental environment.",
+                  "Realtime": "Movement, interaction, sound, and lighting are designed to respond together so the environment feels active rather than static.",
+                  "Visual": "The stage screenshots communicate the creative-technology purpose immediately: this is an environment, a tool, and an experience at the same time.",
+                  "Growth": "This can grow into richer performance modes, more spatial interactions, and deeper relationships between sound, movement, and stage state."
+            },
+            "views": {
+                  "overview": [
+                        "Spatial music environment",
+                        "CloudStage explores how movement, role, and space can become part of an instrument.",
+                        [
+                              "3D stage",
+                              "Performer/listener roles",
+                              "Spatial audio",
+                              "Reactive feedback"
+                        ],
+                        0,
+                        "Environment"
+                  ],
+                  "interface": [
+                        "Role-based experience",
+                        "The interface gives users a way into the world through menus, role cues, and playable stage objects.",
+                        [
+                              "Main menu",
+                              "Performer mode",
+                              "Interaction prompts",
+                              "World feedback"
+                        ],
+                        2,
+                        "Menu + flow"
+                  ],
+                  "system": [
+                        "Unity + audio bridge",
+                        "Unity handles the visual world and input while the synthesis bridge represents the external audio system.",
+                        [
+                              "C# interaction",
+                              "JUCE bridge",
+                              "MIDI events",
+                              "Spatial response"
+                        ],
+                        4,
+                        "Synth bridge"
+                  ],
+                  "process": [
+                        "Playable prototype",
+                        "The work turns a broad MR/audio idea into a staged demo with instruments, roles, and visible response.",
+                        [
+                              "Build scene",
+                              "Add interaction",
+                              "Connect audio path",
+                              "Refine cues"
+                        ],
+                        3,
+                        "Performer view"
+                  ]
+            }
       },
-
-      visualengine: {
-        title:'Aureine Visual Engine', tag:'Python / PySide6 / NumPy / Audio-Reactive Visuals', short:'A real-time visual instrument where audio energy becomes motion, particles, waveform veils, and spectrum gardens.',
-        github:'https://github.com/rachelatkeison/Visual-Engine', demo:'', stack:['Python','PySide6','NumPy','PyQtGraph','sounddevice'],
-        images:['assets/visual-engine/dormant.png','assets/visual-engine/regular.png','assets/visual-engine/full-bloom.png'],
-        strength:'I built this to prove I can turn live data into expressive interface behavior through real-time analysis, visual mapping, and polished state changes.',
-        guide:[['What I built','An audio-reactive visual system that turns sound features into bloom-like motion, light, and visual feedback.'],['What I pushed myself to prove','It proves creative front-end thinking, real-time data interpretation, and aesthetic systems design.'],['What I’m proud of','I’m proud of the way audio analysis, smoothing, visual state changes, and controls turn data into something expressive.']],
-        capabilities:['RMS, peak, centroid, rolloff, and frequency analysis','Bloom particle system driven by audio energy','Waveform veil and spectrum garden rendering','Demo, microphone, and pause modes','Smoothing controls for stable motion'],
-        proof:{Architecture:'The system connects audio analysis, smoothing, visual state, and rendering controls into a coherent visual pipeline.',Interface:'Controls make the visual behavior adjustable instead of purely decorative.',Realtime:'Audio features update the visual world continuously, so smoothing and responsiveness matter.',Visual:'The dormant, regular, and full-bloom states make the project immediately understandable as an expressive system.',Growth:'Future depth can come from more visual modes, export tools, shader experiments, MIDI input, and performance controls.'},
-        views:{overview:['Audio-reactive visual observatory','Visual Engine interprets sound as motion, light, and structure rather than acting as a plain analyzer.',['Audio input analysis','Energy-to-particle mapping','Waveform and spectrum systems','Expressive visual states'],1,'Regular state'],interface:['Interface','The interface exposes visual states and controls so users can shape gain, bloom, sparkle, and smoothing.',['Demo Dream mode','Microphone mode','Bloom controls','Real-time metrics'],1,'Regular state'],system:['Analysis pipeline','Audio enters a feature-extraction pipeline, is smoothed, then mapped into multiple visualization systems.',['Audio layer','Analysis engine','Smoothing layer','Visualization systems'],0,'Dormant state'],process:['Process + outcome','The project shows how data can become expressive visual behavior, with room for future shader, MIDI, and XR directions.',['Feature extraction','Audio-to-visual mapping','State design','Full bloom stress testing'],2,'Full bloom state']}
+      "visualengine": {
+            "title": "Aureine Visual Engine",
+            "tag": "Python / PySide6 / NumPy / Audio-Reactive Visuals",
+            "short": "A real-time visualization system that maps audio features into particles, waveforms, spectrum motion, bloom states, and controllable visual behavior.",
+            "github": "https://github.com/rachelatkeison/Visual-Engine",
+            "demo": "",
+            "stack": [
+                  "Python",
+                  "PySide6",
+                  "NumPy",
+                  "PyQtGraph",
+                  "sounddevice"
+            ],
+            "images": [
+                  "assets/visual-engine/dormant.png",
+                  "assets/visual-engine/regular.png",
+                  "assets/visual-engine/full-bloom.png"
+            ],
+            "strength": "This project shows creative data-to-interface thinking: live audio analysis becomes a controllable visual system with readable states, not just decorative motion.",
+            "guide": [
+                  [
+                        "What I built",
+                        "An audio-reactive visual system that turns live or demo audio features into bloom motion, waveform veils, particles, and spectrum views."
+                  ],
+                  [
+                        "Engineering challenge",
+                        "The challenge was translating noisy signal data into visuals that feel responsive but still stable, readable, and controllable."
+                  ],
+                  [
+                        "Recruiter signal",
+                        "It connects data interpretation, UI controls, visual design, and real-time feedback in one focused application."
+                  ]
+            ],
+            "capabilities": [
+                  "RMS, peak, centroid, rolloff, dominant frequency, and smoothing analysis",
+                  "Energy-to-particle mapping and bloom state behavior",
+                  "Waveform veil and spectrum garden rendering",
+                  "Demo, microphone, pause, gain, bloom, sparkle, and smoothing controls",
+                  "State-based visual feedback for dormant, regular, and full-bloom behavior"
+            ],
+            "proof": {
+                  "Architecture": "The pipeline connects audio input, feature extraction, smoothing, state logic, rendering controls, and interface actions in a readable flow.",
+                  "Interface": "The controls let a user change input, gain, bloom, sparkle, and smoothing, making the system adjustable instead of purely ornamental.",
+                  "Realtime": "Audio features update continuously, so the visual layer has to respond quickly while avoiding chaotic jumps.",
+                  "Visual": "The screenshots show clear states, from dormant to full bloom, proving that the visual language changes with the signal.",
+                  "Growth": "This can expand into richer feature mapping, export modes, streaming overlays, and live performance visuals."
+            },
+            "views": {
+                  "overview": [
+                        "Audio-reactive visual system",
+                        "Visual Engine interprets sound as motion, light, and structure rather than acting as a plain analyzer.",
+                        [
+                              "Audio input analysis",
+                              "Energy mapping",
+                              "Waveform + spectrum",
+                              "Bloom states"
+                        ],
+                        0,
+                        "Dormant state"
+                  ],
+                  "interface": [
+                        "Controllable visuals",
+                        "The panel supports demo input, mic input, gain, bloom, sparkle, pause, and smoothing so the behavior can be tuned.",
+                        [
+                              "Mic/demo modes",
+                              "Gain control",
+                              "Bloom control",
+                              "Smoothing"
+                        ],
+                        1,
+                        "Active state"
+                  ],
+                  "system": [
+                        "Signal-to-visual pipeline",
+                        "Audio features are extracted, smoothed, mapped into state, then rendered through particles, waveform motion, and spectrum structures.",
+                        [
+                              "RMS/peak",
+                              "Centroid/rolloff",
+                              "Frequency",
+                              "Motion density"
+                        ],
+                        2,
+                        "Full bloom"
+                  ],
+                  "process": [
+                        "Readable energy states",
+                        "The project makes live signal changes visible through clear visual modes and feedback instead of raw numbers alone.",
+                        [
+                              "Analyze signal",
+                              "Map features",
+                              "Smooth motion",
+                              "Render state"
+                        ],
+                        2,
+                        "Full bloom"
+                  ]
+            }
       },
-      musicbox: {
-        title:'Aureine Music Box', tag:'Python / PySide6 / MIDI / Harmonic Intelligence', short:'A real-time MIDI intelligence system that listens to performance, interprets harmony, and responds with expressive visual feedback.',
-        github:'https://github.com/rachelatkeison/Aureine-Music-Box', demo:'https://www.youtube.com/watch?v=eQDCkgNJ8cs', stack:['Python','PySide6','PyQtGraph','MIDI','Music theory'],
-        images:['assets/music-box/01-empty-system.png','assets/music-box/03-bloom-chord.png','assets/music-box/04-iridescent-spread.png','assets/music-box/05-gesture-observatory-closeup.png','assets/music-box/06-dream-cadence.png'],
-        strength:'I built this to translate music theory into usable software: MIDI state, harmonic analysis, generative response, and musician-facing design.',
-        guide:[['What I built','A MIDI intelligence tool that turns musical input into analysis, response, and visual understanding.'],['What I pushed myself to prove','It translates abstract music theory into a live software system.'],['What I’m proud of','I’m proud of the way note state, chord/key analysis, generative response, and observatory-style visuals make music theory feel alive.']],
-        capabilities:['Polyphonic note tracking','Chord/key/scale recognition','Harmony and progression generation','Arpeggiator and rhythm tools','Tonal orbit and gesture visualization'],
-        proof:{Architecture:'The pipeline moves from MIDI input to note state, harmonic analysis, generative logic, and visualization.',Interface:'The visual language makes musical ideas feel observable: chord blooms, tonal orbits, and gesture fields.',Realtime:'The system reacts to active performance, so timing and note-state management are central.',Visual:'Screenshots show a product-like musical observatory rather than a raw script.',Growth:'It can grow into richer composition tools, deeper generative systems, and more musician workflows.'},
-        views:{overview:['Musical intelligence system','Music Box transforms MIDI input into understanding: chords, tonal centers, intervals, gestures, and generative possibilities.',['Real-time MIDI','Harmonic analysis','Generative response','Musical visuals'],0,'Full system'],interface:['Interface','The interface behaves like a musical observatory: chord blooms, tonal orbit, and gesture views reveal what the performer is doing.',['Chord bloom','Tonal orbit','Gesture observatory','Activity monitor'],1,'Chord bloom'],system:['System pipeline','MIDI input becomes active note state, harmonic analysis, generative response, and visualization.',['Input layer','State engine','Harmonic analysis','Generative visuals'],2,'Iridescent spread'],process:['Process + outcome','The project shows that I can translate abstract musical theory into interactive software that responds in real time.',['Chord tests','Visualization iterations','Keyboard mapping','Generative design'],4,'Dream cadence']}
+      "musicbox": {
+            "title": "Aureine Music Box",
+            "tag": "Python / PySide6 / MIDI / Harmonic Intelligence",
+            "short": "A MIDI intelligence tool that listens to musical input, tracks harmony, and turns music theory into readable visual and generative feedback.",
+            "github": "https://github.com/rachelatkeison/Aureine-Music-Box",
+            "demo": "https://www.youtube.com/watch?v=eQDCkgNJ8cs",
+            "stack": [
+                  "Python",
+                  "PySide6",
+                  "PyQtGraph",
+                  "MIDI",
+                  "Music theory"
+            ],
+            "images": [
+                  "assets/music-box/01-empty-system.png",
+                  "assets/music-box/03-bloom-chord.png",
+                  "assets/music-box/04-iridescent-spread.png",
+                  "assets/music-box/05-gesture-observatory-closeup.png",
+                  "assets/music-box/06-dream-cadence.png"
+            ],
+            "strength": "This project connects software, music theory, visualization, and product empathy: it turns abstract harmonic structure into an interface a musician can understand while playing.",
+            "guide": [
+                  [
+                        "What I built",
+                        "A real-time MIDI analysis system that tracks notes, chords, keys, intervals, gestures, and harmonic movement."
+                  ],
+                  [
+                        "Engineering challenge",
+                        "The challenge was keeping musical interpretation live, readable, and useful while the input keeps changing."
+                  ],
+                  [
+                        "Recruiter signal",
+                        "It proves I can translate domain knowledge into software behavior, visual feedback, and musician-facing interaction."
+                  ]
+            ],
+            "capabilities": [
+                  "Polyphonic MIDI state tracking and note interpretation",
+                  "Chord, interval, key, and scale recognition",
+                  "Harmony, progression, arpeggiator, and rhythm support",
+                  "Tonal orbit, chord bloom, gesture, and cadence visualization",
+                  "Musician-centered interface decisions based on creator workflow"
+            ],
+            "proof": {
+                  "Architecture": "The pipeline moves from MIDI input to note state, harmonic analysis, generative logic, and visualization, giving each layer a clear job.",
+                  "Interface": "Chord blooms, tonal orbit views, and gesture displays make invisible music theory easier to observe while performing.",
+                  "Realtime": "The system reacts while notes change, which makes timing, state, and musical interpretation central to the experience.",
+                  "Visual": "The visual language gives abstract harmony a surface, turning music theory into something a user can see and follow.",
+                  "Growth": "This can grow into richer accompaniment, better notation, smarter progression suggestions, and deeper integration with creative workflows."
+            },
+            "views": {
+                  "overview": [
+                        "Musical intelligence tool",
+                        "Music Box transforms MIDI input into understanding: notes, chords, tonal centers, intervals, gestures, and generative possibilities.",
+                        [
+                              "Real-time MIDI",
+                              "Harmonic analysis",
+                              "Generative response",
+                              "Visual feedback"
+                        ],
+                        0,
+                        "Empty system"
+                  ],
+                  "interface": [
+                        "Harmony made visible",
+                        "The interface translates musical structure into chord blooms, tonal orbit, gesture feedback, and cadence states.",
+                        [
+                              "Chord blooms",
+                              "Tonal orbit",
+                              "Gesture view",
+                              "Cadence feedback"
+                        ],
+                        2,
+                        "Bloom chord"
+                  ],
+                  "system": [
+                        "Music theory pipeline",
+                        "MIDI input becomes note state, then harmonic interpretation, then visual and generative response.",
+                        [
+                              "Note tracking",
+                              "Chord detection",
+                              "Key/scale logic",
+                              "Progression support"
+                        ],
+                        3,
+                        "Iridescent spread"
+                  ],
+                  "process": [
+                        "Creator-centered tool",
+                        "The project is built from the perspective of a musician who wants feedback that supports creative flow.",
+                        [
+                              "Track notes",
+                              "Interpret harmony",
+                              "Visualize structure",
+                              "Suggest motion"
+                        ],
+                        4,
+                        "Gesture observatory"
+                  ]
+            }
       }
-    };
+};
 
     // Art data keeps the selected image, statement, and UI translation synced together.
     const arts = [
@@ -5829,115 +6418,390 @@
     // Skill clusters are written around outcomes so each tool list has a reason to exist.
     const skillGroups = [
       {
-        key:'systems', title:'Systems', icon:'⌘', tools:['C++','Java','Git','Networking','Data Structures'],
-        text:'C++, Java, Git, networking concepts, and data structures support organized software that can grow beyond a class assignment.',
-        outcomes:['Architecture that can be explained','Debuggable structure','Clear project organization'],
-        details:[
-          'I want my code to make sense to another person, not just pass a test. I’m learning to separate pieces clearly so a teammate could open the project and follow my choices.',
-          'When something breaks, I try to leave myself a path back to the problem: clear files, small responsibilities, and names that say what they do.',
-          'Good organization helps me keep building instead of getting lost in my own work, especially when a project grows past the first version.'
-        ],
-        proof:['Aureine Live','LumenBloom','CloudStage']
+            "key": "systems",
+            "title": "Systems Engineering",
+            "icon": "⌘",
+            "tools": [
+                  "Python",
+                  "C++",
+                  "Java",
+                  "WebSockets",
+                  "Git",
+                  "Data Structures"
+            ],
+            "text": "Architecture, debugging, networking concepts, and data structures show up in the systems I build and the way I organize them.",
+            "outcomes": [
+                  "Readable architecture",
+                  "Debuggable project structure",
+                  "Real-time state handling"
+            ],
+            "details": [
+                  "I focus on separating responsibilities so a project can be opened, explained, tested, and improved by someone besides me.",
+                  "When something breaks, I want the structure to give me a path back to the cause through clear modules, names, and boundaries.",
+                  "Aureine Live, LumenBloom, and CloudStage show systems thinking across networking, audio, plugins, and interactive worlds."
+            ],
+            "proof": [
+                  "Aureine Live",
+                  "LumenBloom",
+                  "CloudStage"
+            ]
       },
       {
-        key:'audio', title:'Audio Tools', icon:'♪', tools:['JUCE','DSP','MIDI','FMOD','synthesis'],
-        text:'JUCE, DSP, MIDI, and synthesis projects show my interest in musician-facing software, real-time audio, and expressive tools.',
-        outcomes:['Musician-centered controls','Real-time response','Sound as interaction'],
-        details:[
-          'Because I make music too, I think about whether a control feels natural in the moment, not just whether it technically works.',
-          'Audio tools have to feel immediate. I care about latency, feedback, and small details because one delay can break the creative flow.',
-          'I like when sound becomes part of the interface itself: something you can play, shape, and understand through response.'
-        ],
-        proof:['LumenBloom','Music Box','Aureine Live']
+            "key": "audio",
+            "title": "Audio & Music Tech",
+            "icon": "♪",
+            "tools": [
+                  "JUCE",
+                  "DSP",
+                  "MIDI",
+                  "synthesis",
+                  "sounddevice",
+                  "FMOD"
+            ],
+            "text": "Audio projects show real-time constraints, musician empathy, signal flow, timing, and creator-centered interaction.",
+            "outcomes": [
+                  "Playable digital instruments",
+                  "Musician-centered feedback",
+                  "Real-time audio response"
+            ],
+            "details": [
+                  "Because I make music, I think about how a tool feels while someone is creating, not only whether the feature technically works.",
+                  "Audio work makes latency, control, feedback, and signal flow impossible to ignore, which strengthens my engineering habits.",
+                  "LumenBloom, Music Box, Aureine Live, and CloudStage all connect sound to visible product behavior."
+            ],
+            "proof": [
+                  "LumenBloom",
+                  "Music Box",
+                  "Aureine Live",
+                  "CloudStage"
+            ]
       },
       {
-        key:'interface', title:'Interface', icon:'✿', tools:['JavaScript','UI/UX','Branding','Motion','CSS'],
-        text:'UI/UX, front-end, branding, and motion skills help translate technical systems into experiences people can understand, trust, and enjoy.',
-        outcomes:['Readable visual hierarchy','Animated state feedback','Cohesive visual systems'],
-        details:[
-          'My art background taught me that beauty only helps if the eye knows where to go. I use spacing, scale, and contrast to make the page easier to trust.',
-          'Motion should answer the user: what changed, what is selected, and what is responding. I want animation to feel helpful instead of like extra decoration.',
-          'I care about making every button, glow, and section feel like it belongs to the same world, because consistency makes an experience feel intentional.'
-        ],
-        proof:['This portfolio','Visual Engine','Art Garden']
+            "key": "interface",
+            "title": "Frontend & UI",
+            "icon": "✿",
+            "tools": [
+                  "React",
+                  "JavaScript",
+                  "HTML/CSS",
+                  "UI/UX",
+                  "Figma",
+                  "Motion"
+            ],
+            "text": "Frontend and UI skills help turn technical systems into experiences people can understand, trust, and navigate.",
+            "outcomes": [
+                  "Readable hierarchy",
+                  "Clear state feedback",
+                  "Polished product surfaces"
+            ],
+            "details": [
+                  "My art background taught me that beauty only helps when the eye knows where to go, so I care about spacing, contrast, labels, and rhythm.",
+                  "Motion should clarify what changed, what is selected, and what is responding instead of adding noise.",
+                  "This portfolio, Visual Engine, and the project interfaces show how I translate technical proof into a readable surface."
+            ],
+            "proof": [
+                  "Portfolio",
+                  "Visual Engine",
+                  "Art Garden"
+            ]
       },
       {
-        key:'data', title:'Data Thinking', icon:'✧', tools:['Python','SQL','Pandas','NumPy','Tableau'],
-        text:'Python, SQL, Pandas, NumPy, and Tableau support analysis, structured thinking, visualization, and practical tooling.',
-        outcomes:['Structured analysis','Practical automation','Information visualization'],
-        details:[
-          'Data work trains me to slow down and ask what the information is actually saying before I try to make it look impressive.',
-          'I like using code to remove repetitive work so there is more time for the harder thinking, testing, and creative decisions.',
-          'A good display should make the pattern easier to see. I want visuals to clarify the idea, not hide it behind decoration.'
-        ],
-        proof:['Aureine Live','Coursework','Visual Engine']
+            "key": "data",
+            "title": "Data & Visualization",
+            "icon": "✧",
+            "tools": [
+                  "Python",
+                  "SQL",
+                  "NumPy",
+                  "Pandas",
+                  "PyQtGraph",
+                  "Tableau"
+            ],
+            "text": "Data and visualization skills support analysis, structured thinking, signal interpretation, and practical tooling.",
+            "outcomes": [
+                  "Signal interpretation",
+                  "Information visualization",
+                  "Practical automation"
+            ],
+            "details": [
+                  "Data work trains me to ask what the information is actually saying before I try to make it look impressive.",
+                  "I like using code to make patterns easier to see, especially when raw values are too abstract for a user to understand quickly.",
+                  "Visual Engine and Aureine Live both turn live information into visual feedback that a person can read."
+            ],
+            "proof": [
+                  "Visual Engine",
+                  "Aureine Live",
+                  "Coursework"
+            ]
       },
       {
-        key:'creative', title:'Creative Tech', icon:'☾', tools:['Unity','OpenGL','PySide6','visual systems','interaction'],
-        text:'Unity, OpenGL, PySide6, and visual systems support creative technology roles that need engineering, interaction, and atmosphere.',
-        outcomes:['Interactive environments','Audio-reactive worlds','Expressive tools'],
-        details:[
-          'I’m drawn to projects where someone can step into a system and feel it respond to them, instead of only watching something happen on screen.',
-          'This combines the parts of tech I love most: signal, timing, visuals, and emotion all reacting together in real time.',
-          'I want to build tools that invite people to create, explore, and feel capable, not tools that make the creative process feel intimidating.'
-        ],
-        proof:['CloudStage','Visual Engine','Music Box']
+            "key": "creative",
+            "title": "Creative Technology",
+            "icon": "☾",
+            "tools": [
+                  "Unity",
+                  "C#",
+                  "PySide6",
+                  "OpenGL concepts",
+                  "interaction",
+                  "visual systems"
+            ],
+            "text": "Creative technology combines engineering, interaction, visuals, sound, and atmosphere into systems people can experience directly.",
+            "outcomes": [
+                  "Interactive environments",
+                  "Audio-reactive systems",
+                  "Expressive tools"
+            ],
+            "details": [
+                  "I am drawn to projects where someone can touch a system and feel it respond, not just watch something happen on screen.",
+                  "This area combines the parts of technology I love most: signal, timing, visuals, music, and emotion reacting together.",
+                  "CloudStage, Visual Engine, Music Box, and the art section show the creative direction behind the engineering."
+            ],
+            "proof": [
+                  "CloudStage",
+                  "Visual Engine",
+                  "Music Box"
+            ]
       },
       {
-        key:'learning', title:'Learning Momentum', icon:'♡', tools:['debugging','documentation','teaching','iteration'],
-        text:'Learning momentum is the connective tissue. I can enter unfamiliar tools, ask better questions, document what I learn, and keep improving.',
-        outcomes:['Fast adaptation','Clear communication','Sustained project growth'],
-        details:[
-          'I may not know every tool on day one, but I know how to start, test, search, ask better questions, and keep moving until the problem becomes clearer.',
-          'Teaching made me care about explaining ideas without making people feel lost. That matters in code reviews, documentation, and team work.',
-          'I keep coming back to projects after the first version because refinement is where I learn the most and where the work starts feeling real.'
-        ],
-        proof:['All projects','Teaching background','Portfolio evolution']
+            "key": "learning",
+            "title": "Learning & Communication",
+            "icon": "♡",
+            "tools": [
+                  "debugging",
+                  "documentation",
+                  "teaching",
+                  "iteration",
+                  "feedback"
+            ],
+            "text": "Tutoring and self-directed projects show that I can learn unfamiliar tools, ask better questions, explain clearly, and keep improving.",
+            "outcomes": [
+                  "Fast adaptation",
+                  "Clear explanation",
+                  "Sustained project growth"
+            ],
+            "details": [
+                  "I may not know every tool on day one, but I know how to start, test, search, ask careful questions, and keep moving until the problem becomes clearer.",
+                  "Teaching made me care about explaining ideas without making people feel lost, which matters in documentation, code reviews, and teamwork.",
+                  "I keep returning to projects after the first version because refinement is where the work starts becoming genuinely useful."
+            ],
+            "proof": [
+                  "Tutoring",
+                  "Portfolio evolution",
+                  "All projects"
+            ]
       }
-    ];
+];
 
     // Role compass data separates the short button text from the deeper selected lens explanation.
     const roles = [
-      ['Software Engineer','Implementation, debugging, architecture, and careful systems work.','Aureine Live shows real-time systems thinking, and LumenBloom shows lower-level C++/JUCE audio work.',['Aureine Live','LumenBloom','Systems cluster'],'⌘',[
-        'This direction fits the part of me that likes turning unclear problems into stable, readable, working systems. I enjoy the quiet persistence of debugging, the discipline of separating responsibilities, and the satisfaction of making something easier to maintain than it was when I found it.',
-        'I would bring patience, curiosity, and a student mindset to engineering work: I learn the codebase, ask careful questions, document what I discover, and keep improving until the solution is understandable to the next person too.'
-      ]],
-      ['Creative Technologist','Code, spatial audio, visual systems, and interaction design.','CloudStage and Visual Engine show the clearest mix of engineering, atmosphere, and creative technology.',['CloudStage','Visual Engine','Art Garden'],'✿',[
-        'This direction fits my natural overlap between art, music, and software. I like building experiences where interaction, sound, motion, and atmosphere support one another instead of feeling like separate layers.',
-        'I would be strongest on teams making installations, tools, interactive media, XR, audio experiences, or visual systems because I care about both the technical behavior and the emotional clarity of the finished piece.'
-      ]],
-      ['UI / Front-End','Visual hierarchy, motion, state clarity, and polished interaction.','Art Garden, Visual Engine, and this portfolio show how I translate visual taste into usable interfaces.',['Art Garden','Visual Engine','Interface cluster'],'✦',[
-        'This direction fits the way I think visually. I notice spacing, rhythm, labels, contrast, motion, and whether someone can understand an interface without feeling overwhelmed.',
-        'I would bring a strong design eye into front-end work, but not only for decoration. My goal is to make interfaces feel more readable, more intentional, and more humane while still respecting the structure underneath.'
-      ]],
-      ['Music Technology','JUCE, MIDI, DSP, synthesis, and musician-centered workflows.','LumenBloom, Music Box, Aureine Live, and my own releases show that I understand music tools from both the builder side and the creator side.',['LumenBloom','Music Box','Aureine Live'],'♪',[
-        'This direction is personal to me because I use music tools as a creator, not just as a programmer studying them from the outside. That helps me notice when a workflow feels expressive, confusing, playful, slow, or inspiring.',
-        'I would bring both technical curiosity and musician empathy to audio software: I care about timing, control, feedback, sound design, and the feeling of staying in a creative flow while using a tool.'
-      ]]
-    ];
+      [
+            "Software Engineer",
+            "Systems, debugging, architecture, and readable implementation.",
+            "Aureine Live shows real-time systems thinking, LumenBloom shows lower-level C++/JUCE work, and Visual Engine shows data-to-interface logic.",
+            [
+                  "Aureine Live",
+                  "LumenBloom",
+                  "Visual Engine"
+            ],
+            "⌘",
+            [
+                  "This lens fits the part of me that likes turning unclear problems into stable, readable, working systems. I enjoy debugging, separating responsibilities, documenting decisions, and making software easier for the next person to understand.",
+                  "I would bring patience, curiosity, and a strong learning drive: I learn the codebase, ask careful questions, test my assumptions, and keep improving until the solution is understandable and useful."
+            ]
+      ],
+      [
+            "Creative Technologist",
+            "Interaction, spatial audio, visual systems, and expressive tools.",
+            "CloudStage, Visual Engine, Music Box, and Art Garden show the overlap between engineering, atmosphere, interaction, and user experience.",
+            [
+                  "CloudStage",
+                  "Visual Engine",
+                  "Music Box"
+            ],
+            "✿",
+            [
+                  "This lens fits my natural overlap between art, music, and software. I like building experiences where interaction, sound, motion, and atmosphere support each other as one system.",
+                  "I would be strongest on teams making installations, XR, creative tools, interactive media, audio experiences, or visual systems because I care about both behavior and emotional clarity."
+            ]
+      ],
+      [
+            "UI / Frontend Engineer",
+            "Frontend polish, hierarchy, state clarity, and interaction design.",
+            "This portfolio, Visual Engine, and the project interfaces show how I turn technical content into a readable product experience.",
+            [
+                  "Portfolio",
+                  "Visual Engine",
+                  "Art Garden"
+            ],
+            "☾",
+            [
+                  "This lens fits the way I think visually. I notice spacing, labels, contrast, motion, and whether someone can understand an interface without feeling overwhelmed.",
+                  "I would bring a strong design eye into frontend work, but not only for decoration. My goal is to make interfaces clearer, more intentional, and easier to trust."
+            ]
+      ],
+      [
+            "Audio Software / Music Tech",
+            "JUCE, MIDI, DSP, synthesis, timing, and musician-centered workflows.",
+            "LumenBloom, Music Box, Aureine Live, CloudStage, and my own releases show that I understand music tools from both the builder side and the creator side.",
+            [
+                  "LumenBloom",
+                  "Music Box",
+                  "Aureine Live"
+            ],
+            "♪",
+            [
+                  "This lens is personal because I use music tools as a creator, not just as a programmer studying them from the outside. That helps me notice when a workflow feels expressive, confusing, playful, slow, or inspiring.",
+                  "I would bring both technical curiosity and musician empathy to audio software: I care about timing, control, feedback, sound design, and staying in creative flow."
+            ]
+      ]
+];
 
     // Contact routes explain what kind of next step each link supports.
     const contactRoutes = [
-      ['Interview / opportunity','Email is the clearest path for internships, opportunities, role-specific questions, and collaborations. I am ready to learn quickly and contribute with care.',['email first','resume','LinkedIn']],
-      ['Code review','GitHub is where my project structure, implementation choices, and technical growth are easiest to review.',['GitHub','projects','screenshots']],
-      ['Creative fit','The portfolio and art sections show the visual instincts I bring into interface design, creative tools, and product polish.',['portfolio','art garden','visual systems']],
-      ['Music technology','LumenBloom, Aureine Live, Music Box, and my music releases show why musician-centered software matters to me personally.',['JUCE','MIDI','DSP']]
-    ];
+      [
+            "Interview / opportunity",
+            "Email is the clearest path for internships, role-specific questions, and collaborations. I am ready to learn quickly, contribute carefully, and show how the portfolio maps to your team.",
+            [
+                  "email first",
+                  "resume",
+                  "LinkedIn"
+            ]
+      ],
+      [
+            "Code review",
+            "GitHub is where my project structure, implementation choices, screenshots, README notes, and technical growth are easiest to review.",
+            [
+                  "GitHub",
+                  "projects",
+                  "architecture"
+            ]
+      ],
+      [
+            "Creative fit",
+            "The portfolio and art sections show the visual instincts I bring into interface design, creative tools, product polish, and user-facing presentation.",
+            [
+                  "portfolio",
+                  "art garden",
+                  "UI polish"
+            ]
+      ],
+      [
+            "Music technology",
+            "LumenBloom, Aureine Live, Music Box, CloudStage, and my music releases show why musician-centered software matters to me personally.",
+            [
+                  "JUCE",
+                  "MIDI",
+                  "DSP"
+            ]
+      ]
+];
 
     const contactLinks = [
-      ['✉','Email','rachel.atkeison@gmail.com','mailto:rachel.atkeison@gmail.com'], ['⌘','GitHub','github.com/rachelatkeison','https://github.com/rachelatkeison'], ['♡','LinkedIn','linkedin.com/in/rachel-atkeison','https://www.linkedin.com/in/rachel-atkeison'], ['⇣','Resume','download PDF','resume.pdf'], ['▶','YouTube','@notreallyaureine','https://www.youtube.com/@notreallyaureine'], ['♪','Music','AUREINE everywhere','https://open.spotify.com/artist/5aSYgm9PkUteLdBnn6RamH?si=dWg9YxuNTYyxrvO2Gw0G0Q']
+      ['✉','Email','rachel.atkeison@gmail.com','mailto:rachel.atkeison@gmail.com'], ['⌘','GitHub','github.com/rachelatkeison','https://github.com/rachelatkeison'], ['♡','LinkedIn','linkedin.com/in/rachel-atkeison','https://www.linkedin.com/in/rachel-atkeison'], ['⇣','Resume','download PDF','resume.pdf'], ['▶','YouTube','demos + music','https://www.youtube.com/@notreallyaureine'], ['♪','Music','AUREINE everywhere','https://open.spotify.com/artist/5aSYgm9PkUteLdBnn6RamH?si=dWg9YxuNTYyxrvO2Gw0G0Q']
     ];
 
     // These small maps make each section feel interactive without forcing a long paragraph at the top.
     const maps = {
-      sparkMap:[['Build','I turn vague ideas into working prototypes, then refine the structure.'],['Design','I use hierarchy, softness, motion, and atmosphere to make software feel clear and approachable.'],['Learn','I am driven to grow in whatever direction a team needs.']],
-      projectReadMap:[['Interface','I care about whether the work feels understandable the moment someone touches it.'],['System','I keep learning how to separate responsibilities so the work can grow without becoming fragile.'],['Process','I want the work to show persistence: the debugging, testing, and refinement behind the final result.']],
-      artReadMap:[['Palette','Color systems create emotional direction and visual consistency.'],['Gesture','Line, pose, shape, and rhythm make the work feel alive.'],['UI translation','Art instincts become hierarchy, motion, and product atmosphere.']],
-      musicReadMap:[['Composition','Structure, variation, and transitions train the same patience I use in software.'],['Experience','Music keeps me focused on how a finished product feels to a real person.'],['Release','Shipping public work builds discipline, branding sense, and follow-through.']],
-      skillReadMap:[['Outcomes','Every skill should point toward something useful I can make.'],['Tools','I connect tools back to projects so the list feels earned.'],['Growth','I am still growing, and I am serious about turning learning into visible progress.']],
-      pathReadMap:[['Software','Implementation, architecture, debugging, and systems.'],['Creative tech','Unity, audio, visuals, interaction, and atmosphere.'],['UI / Music','Interface polish plus musician-centered technical projects.']],
-      contactReadMap:[['Email first','The clearest way to reach me directly.'],['Project links','GitHub, portfolio, resume, and demos show the work behind the words.'],['Creative fit','Art, music, and visuals show the creative engine behind my technical work.']]
-    };
+      "sparkMap": [
+            [
+                  "Build",
+                  "Turn vague ideas into working prototypes with enough structure to test."
+            ],
+            [
+                  "Explain",
+                  "Make technical ideas easier for another person to understand."
+            ],
+            [
+                  "Refine",
+                  "Keep improving the interface, architecture, and proof after the first version works."
+            ]
+      ],
+      "projectReadMap": [
+            [
+                  "Systems",
+                  "Real-time state, C++ audio, Unity interaction, and signal pipelines."
+            ],
+            [
+                  "Interfaces",
+                  "Screenshots, controls, labels, and flows designed for fast review."
+            ],
+            [
+                  "Proof",
+                  "Demos, GitHub links, deep reads, and visible decisions behind the work."
+            ]
+      ],
+      "artReadMap": [
+            [
+                  "Hierarchy",
+                  "Control attention so visual polish supports clarity."
+            ],
+            [
+                  "Atmosphere",
+                  "Use color, motion, and softness with restraint."
+            ],
+            [
+                  "Translation",
+                  "Turn art instincts into interface rhythm and product identity."
+            ]
+      ],
+      "musicReadMap": [
+            [
+                  "Timing",
+                  "Music trains sensitivity to latency, pacing, and feedback."
+            ],
+            [
+                  "Experience",
+                  "Sound keeps the user feeling central to the tool."
+            ],
+            [
+                  "Release",
+                  "Public music projects prove finishing, packaging, and presentation discipline."
+            ]
+      ],
+      "skillReadMap": [
+            [
+                  "Evidence",
+                  "Every skill cluster points back to a project or practice."
+            ],
+            [
+                  "Range",
+                  "Systems, audio, frontend, data, creative tech, and communication."
+            ],
+            [
+                  "Growth",
+                  "The strongest signal is not perfection, it is visible momentum."
+            ]
+      ],
+      "pathReadMap": [
+            [
+                  "Software",
+                  "Architecture, debugging, data flow, and reliable implementation."
+            ],
+            [
+                  "Creative tech",
+                  "Unity, interaction, audio, visuals, and atmosphere."
+            ],
+            [
+                  "UI / Audio",
+                  "Frontend polish plus musician-centered technical projects."
+            ]
+      ],
+      "contactReadMap": [
+            [
+                  "Email first",
+                  "The clearest way to reach me directly."
+            ],
+            [
+                  "Review proof",
+                  "GitHub, resume, demos, screenshots, and deep reads support the work."
+            ],
+            [
+                  "Role fit",
+                  "The same projects can be read through software, UI, creative tech, or music tech lenses."
+            ]
+      ]
+};
 
     // Guide state is intentionally small because the section panels already carry most of the explanation.
     function setGuide(title, text){
@@ -6004,9 +6868,9 @@
     function renderSpark(){
       const signals = [
         ['Builder','⌘','systems, prototypes, implementation','I turn vague ideas into working prototypes, then keep shaping them until the structure can be explained, tested, and expanded.'],
-        ['Visual Designer','✿','art direction, UI, polish','I care about hierarchy, softness, motion, and atmosphere because visual clarity helps people feel oriented instead of overwhelmed.'],
-        ['Teacher','♡','communication, clarity, support','Teaching shaped the way I communicate: I try to make unfamiliar ideas feel less intimidating, more visual, and more human.'],
-        ['Learner','✦','growth, adaptability, momentum','I am open to new tools, new directions, and the kind of growth that happens when a team trusts me with a hard problem.']
+        ['Systems Thinker','✦','architecture, state, debugging','I care about the structure underneath the surface: where data moves, how state changes, and whether the system can keep growing.'],
+        ['Visual Designer','✿','art direction, UI, polish','I use hierarchy, spacing, motion, and atmosphere to make complex work feel easier to enter and easier to trust.'],
+        ['Teacher','♡','communication, clarity, support','Teaching shaped the way I communicate: I try to make unfamiliar ideas feel less intimidating, more visual, and more human.']
       ];
       $('#signalGrid').innerHTML = signals.map((s,i)=>`<button class="signal-card glass ${i===0?'active':''}" type="button" data-title="${s[0]}" data-text="${s[3]}"><i>${s[1]}</i><b>${s[0]}</b><span>${s[2]}</span></button>`).join('');
       $$('.signal-card').forEach(btn => btn.addEventListener('click', e => {
@@ -6014,7 +6878,7 @@
         $('#signalOutput').innerHTML = `<b>${escapeHTML(btn.dataset.title)}.</b><p>${escapeHTML(btn.dataset.text)}</p>`;
         burst(e.clientX,e.clientY,8);
       }));
-      const steps = [['Notice','find the real problem'],['Build','make the first honest prototype'],['Explain','turn complexity into clarity'],['Refine','make the work feel intentional']];
+      const steps = [['Notice','find the real problem'],['Build','make the first honest prototype'],['Test','make the behavior visible'],['Refine','turn the work into something understandable']];
       $('#workThread').innerHTML = steps.map(s=>`<button class="thread-step" type="button" data-title="${s[0]}" data-text="${s[1]}"><b>${s[0]}</b><span>${s[1]}</span></button>`).join('');
       $$('.thread-step').forEach(btn => btn.addEventListener('click', e => {
         $('#signalOutput').innerHTML = `<b>${escapeHTML(btn.dataset.title)}.</b><p>${escapeHTML(btn.dataset.text)}. This is one step in how I turn a rough idea into something clear and usable.</p>`;
@@ -6148,7 +7012,12 @@
     function renderContact(){
       $('#contactRoutes').innerHTML = contactRoutes.map((r,i)=>`<button class="contact-route ${i===0?'active':''}" type="button" data-index="${i}">${escapeHTML(r[0])}</button>`).join('');
       $$('.contact-route').forEach(btn => btn.addEventListener('click', e => { setContact(Number(btn.dataset.index)); burst(e.clientX,e.clientY,8); }));
-      $('#contactLinks').innerHTML = contactLinks.map(([icon,title,sub,href])=>`<a class="contact-link" href="${href}" ${href.startsWith('http') || href.endsWith('.pdf') ? 'target="_blank" rel="noreferrer"' : ''}><em>${icon}</em><b>${escapeHTML(title)}</b><span>${escapeHTML(sub)}</span></a>`).join('');
+      $('#contactLinks').innerHTML = contactLinks.map(([icon,title,sub,href])=>{
+        const isPdf = href.endsWith('.pdf');
+        const externalAttrs = href.startsWith('http') || isPdf ? 'target="_blank" rel="noreferrer"' : '';
+        const downloadAttr = isPdf ? 'download="Rachel_Atkeison_Resume.pdf"' : '';
+        return `<a class="contact-link" href="${href}" ${externalAttrs} ${downloadAttr}><em>${icon}</em><b>${escapeHTML(title)}</b><span>${escapeHTML(sub)}</span></a>`;
+      }).join('');
       setContact(0);
     }
     function setContact(i){
@@ -6686,8 +7555,15 @@
       ].join(',');
 
       function hardenControls(root = document) {
-        // 1. Remove any accidental download behavior globally.
-        $$('a[download]', root).forEach(anchor => anchor.removeAttribute('download'));
+        // 1. Remove accidental download behavior, but keep the intentional resume PDF download.
+        $$('a[download]', root).forEach(anchor => {
+          const href = anchor.getAttribute('href') || '';
+          if (/resume\.pdf(\?|#|$)/i.test(href)) {
+            anchor.setAttribute('download', 'Rachel_Atkeison_Resume.pdf');
+            return;
+          }
+          anchor.removeAttribute('download');
+        });
 
         // 2. Make generated interactive controls explicit non-submit buttons.
         $$(INTERNAL_CONTROLS, root).forEach(control => {
@@ -6737,7 +7613,14 @@
         $$('a', root).forEach(anchor => {
           if (anchor.dataset.hrefGuard === 'true') return;
           anchor.dataset.hrefGuard = 'true';
-          anchor.removeAttribute('download');
+          const hrefBeforeGuard = anchor.getAttribute('href') || '';
+          if (/resume\.pdf(\?|#|$)/i.test(hrefBeforeGuard)) {
+            anchor.setAttribute('download', 'Rachel_Atkeison_Resume.pdf');
+            anchor.setAttribute('target', '_blank');
+            anchor.setAttribute('rel', 'noreferrer');
+          } else {
+            anchor.removeAttribute('download');
+          }
           anchor.addEventListener('click', event => {
             const href = anchor.getAttribute('href');
             const isRealHash = href && href.startsWith('#') && document.querySelector(href);
@@ -7269,6 +8152,59 @@
       setTimeout(requestUpdate, 500);
     })();
   </script>
+
+
+  <style id="final-art-actions-readable-fix">
+    /* Final pass: keep the Art Garden action buttons soft, magical, and readable. */
+    html body section#art .hero-actions button#openArtModal.mini-link,
+    html body section#art .hero-actions button#shuffleArt.mini-link,
+    html body section#art .hero-actions button#openArtModal.mini-link.primary,
+    html body section#art .hero-actions button#shuffleArt.mini-link.primary,
+    html body.simple-mode section#art .hero-actions button#openArtModal.mini-link,
+    html body.simple-mode section#art .hero-actions button#shuffleArt.mini-link,
+    html body.effects-off section#art .hero-actions button#openArtModal.mini-link,
+    html body.effects-off section#art .hero-actions button#shuffleArt.mini-link {
+      color: #2f2147 !important;
+      -webkit-text-fill-color: #2f2147 !important;
+      font-weight: 800 !important;
+      letter-spacing: .035em !important;
+      background:
+        radial-gradient(circle at 14% 12%, rgba(255,255,255,.78), transparent 26%),
+        radial-gradient(circle at 88% 82%, rgba(221,244,255,.42), transparent 42%),
+        linear-gradient(135deg, rgba(255,220,242,.92), rgba(225,216,255,.92), rgba(210,239,255,.88), rgba(231,255,238,.84)) !important;
+      background-color: rgba(236, 226, 255, .94) !important;
+      border: 1px solid rgba(122, 72, 160, .26) !important;
+      box-shadow:
+        0 0 12px rgba(255,210,242,.28),
+        0 0 24px rgba(189,207,255,.20),
+        0 12px 28px rgba(37,18,62,.14),
+        inset 0 0 0 1px rgba(255,255,255,.45) !important;
+      text-shadow:
+        0 1px 0 rgba(255,255,255,.72),
+        0 0 10px rgba(255,255,255,.38) !important;
+      filter: saturate(1.02) brightness(.98) !important;
+      opacity: 1 !important;
+    }
+
+    html body section#art .hero-actions button#openArtModal.mini-link:hover,
+    html body section#art .hero-actions button#shuffleArt.mini-link:hover,
+    html body section#art .hero-actions button#openArtModal.mini-link:focus-visible,
+    html body section#art .hero-actions button#shuffleArt.mini-link:focus-visible {
+      color: #241736 !important;
+      -webkit-text-fill-color: #241736 !important;
+      border-color: rgba(122, 72, 160, .38) !important;
+      background:
+        radial-gradient(circle at 14% 12%, rgba(255,255,255,.86), transparent 28%),
+        radial-gradient(circle at 88% 82%, rgba(221,244,255,.52), transparent 42%),
+        linear-gradient(135deg, rgba(255,226,246,.98), rgba(230,222,255,.98), rgba(216,242,255,.94), rgba(235,255,241,.90)) !important;
+      box-shadow:
+        0 0 16px rgba(255,210,242,.36),
+        0 0 34px rgba(189,207,255,.26),
+        0 16px 34px rgba(37,18,62,.18),
+        inset 0 0 0 1px rgba(255,255,255,.50) !important;
+      filter: saturate(1.04) brightness(1) !important;
+    }
+  </style>
 
 </body>
 </html>
